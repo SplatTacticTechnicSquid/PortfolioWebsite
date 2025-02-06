@@ -5,13 +5,13 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineNuxtConfig({
   compatibilityDate: "2024-11-01",
   devtools: { enabled: true },
+  alias: {
+    "@": resolve(__dirname, "/"),
+  },
+
   vite: {
     plugins: [tailwindcss()],
   },
 
   css: ["~/assets/css/main.css"],
-
-  alias: {
-    "@": resolve(__dirname, "/"),
-  },
 });
