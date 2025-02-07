@@ -1,7 +1,8 @@
 <template>
   <footer class="w-full bg-gray-900 text-gray-400 text-center py-4">
     <p class="text-sm">
-      &copy; {{ currentYearValue }} Raditya | Built with ❤️ in Nuxt
+      &copy; {{ currentYearValue }} Raditya Rifqi Pratama | Built with ❤️ in
+      Nuxt
     </p>
     <div class="mt-2 flex justify-center space-x-4">
       <a
