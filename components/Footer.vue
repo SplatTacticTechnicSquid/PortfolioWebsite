@@ -1,8 +1,9 @@
 <template>
   <footer class="w-full bg-gray-900 text-gray-400 text-center py-4">
     <p class="text-sm">
-      &copy; {{ currentYearValue }} Raditya Rifqi Pratama | Built with ❤️ in
-      Nuxt
+      &copy; {{ currentYearValue }} Raditya Rifqi Pratama | Built with
+      <span><Icon name="heroicons-outline:heart" /></span> in Nuxt
+      <span> <Icon name="logos:nuxt-icon" /> </span>
     </p>
     <div class="mt-2 flex justify-center space-x-4">
       <a
