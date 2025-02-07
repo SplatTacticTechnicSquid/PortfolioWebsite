@@ -23,7 +23,16 @@ const projects = {
     name: "Vue Dashboard",
     description: "An admin dashboard built with Vue.js",
   },
+  "smartparking-logger": {
+    name: "smartparkinglogger",
+    description: "Android App to log vehicle parking location",
+  },
+  "intelligent-iot-smokedetector": {
+    name: "Intelligent IOT Smoke Detector System",
+    description: "IOT based smoke detector system for indoors usage",
+  },
 };
+
 const project = projects[route.params.id] || {
   name: "Project Not Found",
   description: "This project does not exist.",

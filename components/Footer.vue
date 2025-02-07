@@ -17,7 +17,9 @@
         class="hover:text-white"
         >LinkedIn</a
       >
-      <a href="mailto:your-email@example.com" class="hover:text-white">Email</a>
+      <a href="mailto:radityaprtm2002@gmail.com" class="hover:text-white"
+        >Email</a
+      >
     </div>
   </footer>
 </template>

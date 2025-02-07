@@ -27,5 +27,17 @@ const projects = [
     description: "An admin dashboard built with Vue.js",
     link: "/projects/vue-dashboard",
   },
+  {
+    id: "smartparking-logger",
+    name: "Smartphone Parking Log Application",
+    description: "",
+    link: "/projects/smartparking-logger",
+  },
+  {
+    id: "intelligent-iot-smokedetector",
+    name: "Intelligent IOT Smoke Detector",
+    description: "Intelligent Smoke Detector based on IOT",
+    link: "/projects/intelligent-iot-smokedetector",
+  },
 ];
 </script>
