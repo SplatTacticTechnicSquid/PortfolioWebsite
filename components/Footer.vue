@@ -1,6 +1,8 @@
 <template>
   <footer class="w-full bg-gray-900 text-gray-400 text-center py-4">
-    <p class="text-sm">© 2024 Raditya Rifqi Pratama | Built with ❤️ in Nuxt</p>
+    <p class="text-sm">
+      &copy; {{ currentYearValue }} Raditya | Built with ❤️ in Nuxt
+    </p>
     <div class="mt-2 flex justify-center space-x-4">
       <a
         href="https://github.com/yourusername"
@@ -18,3 +20,9 @@
     </div>
   </footer>
 </template>
+
+<script setup lang="ts">
+import { computed } from "vue";
+
+const currentYearValue = computed(() => new Date().getFullYear());
+</script>
