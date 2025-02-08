@@ -22,10 +22,11 @@ const projects = [
     link: "/projects/nuxt-portfolio",
   },
   {
-    id: "vue-dashboard",
-    name: "Vue Dashboard",
-    description: "An admin dashboard built with Vue.js",
-    link: "/projects/vue-dashboard",
+    id: "iot-weatherstation",
+    name: "Weather Station Based on Arduino",
+    description:
+      "Weather Station using Arduino UNO with DHT22 and MQ-2 Sensors",
+    link: "/projects/iot-weatherstation",
   },
   {
     id: "smartparking-logger",

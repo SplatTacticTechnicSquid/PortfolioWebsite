@@ -19,9 +19,10 @@ const projects = {
     name: "Nuxt Portfolio",
     description: "A fast Nuxt 3 portfolio",
   },
-  "vue-dashboard": {
-    name: "Vue Dashboard",
-    description: "An admin dashboard built with Vue.js",
+  "iot-weatherstation": {
+    name: "IOT Weatherstation",
+    description:
+      "Internet of Things using Arduino UNO as a weather monitoring system",
   },
   "smartparking-logger": {
     name: "smartparkinglogger",
