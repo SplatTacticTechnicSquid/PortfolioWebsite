@@ -7,7 +7,9 @@
     </p>
 
     <div class="mt-10 pl-0 md:pl-2.5 lg:pl-4">
-      <p class="text-white font-mono text-lg">> $ Whoami</p>
+      <p class="text-white font-mono text-lg">
+        > $ Whoami<span class="animate-blink">_</span>
+      </p>
     </div>
   </div>
 </template>
@@ -23,3 +25,15 @@ useHead({
   ],
 });
 </script>
+
+<style scoped>
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.animate-blink {
+  animation: blink 1s infinite;
+}
+</style>
