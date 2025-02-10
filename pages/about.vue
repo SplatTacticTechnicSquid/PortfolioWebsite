@@ -6,3 +6,15 @@
     </p>
   </div>
 </template>
+
+<script setup lang="ts">
+useHead({
+  title: "Portfolio About Me",
+  meta: [
+    {
+      name: "About Me Page",
+      content: "An insight to my profile",
+    },
+  ],
+});
+</script>

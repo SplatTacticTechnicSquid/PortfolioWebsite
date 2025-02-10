@@ -6,4 +6,14 @@
 definePageMeta({
   middleware: "redirect",
 });
+
+useHead({
+  title: "Portfolio Index",
+  meta: [
+    {
+      name: "The main page ",
+      content: "Main index page redirect",
+    },
+  ],
+});
 </script>
