@@ -7,6 +7,10 @@ import tailwindcss from "@tailwindcss/vite";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 export default defineNuxtConfig({
+  app: {
+    pageTransition: { name: "page", mode: "out-in" },
+  },
+
   compatibilityDate: "2024-11-01",
   devtools: { enabled: true },
 
