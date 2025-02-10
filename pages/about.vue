@@ -2,9 +2,25 @@
   <div class="max-w-6xl mx-auto px-6 py-10">
     <h1 class="text-4xl font-bold text-center">About Me</h1>
     <p class="text-center text-gray-300 mt-4">
-      I'm a full-stack developer with experience in Vue.js, Nuxt.js, Next.js,
-      and backend APIs.
+      I'm a full-stack developer with experience in
+      <span class="text-green-400 font-bold">Vue.js</span>,
+      <span class="text-blue-400 font-bold">Nuxt.js</span>, and
+      <span class="text-yellow-400 font-bold">Next.js</span>, and backend APIs.
     </p>
+
+    <!-- Add a terminal section to make it more aesthetic -->
+
+    <!-- Terminal Section -->
+    <div class="mt-10 w-full max-w-2xl">
+      <div
+        class="bg-black/80 text-green-400 font-mono text-lg p-5 rounded-lg border-l-4 border-green-500"
+      >
+        <p>
+          <span class="text-green-400">> $</span>
+          <span>Whoami</span><span class="animate-blink">_</span>
+        </p>
+      </div>
+    </div>
 
     <div class="mt-10 pl-0 md:pl-2.5 lg:pl-4">
       <p class="text-white font-mono text-lg">
