@@ -17,14 +17,14 @@
       >
         <p>
           <span class="text-green-400">> $</span>
-          <span>Whoami</span><span class="animate-blink">_</span>
+          <span> Whoami</span><span class="animate-blink">_</span>
         </p>
       </div>
     </div>
 
     <div class="mt-10 pl-0 md:pl-2.5 lg:pl-4">
       <p class="text-white font-mono text-lg">
-        > $ Whoami<span class="animate-blink">_</span>
+        > $ {{ typedTextHello }}<span class="animate-blink">_</span>
       </p>
     </div>
   </div>
@@ -39,6 +39,23 @@ useHead({
       content: "An insight to my profile",
     },
   ],
+});
+
+const helloFromRaditya =
+  "Hello I am Raditya, an aspiring interdisciplinary techpreneur";
+
+const typedTextHello = ref("");
+
+const typeText = async () => {
+  for (let i = 0; i <= helloFromRaditya.length; i++) {
+    setTimeout(() => {
+      typedTextHello.value = helloFromRaditya.slice(0, i);
+    }, i * 100); //100ms
+  }
+};
+
+onMounted(() => {
+  typeText();
 });
 </script>
 
