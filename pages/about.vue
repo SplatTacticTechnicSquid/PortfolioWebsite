@@ -1,31 +1,37 @@
 <template>
-  <div class="max-w-6xl mx-auto px-6 py-10">
-    <h1 class="text-4xl font-bold text-center">About Me</h1>
-    <p class="text-center text-gray-300 mt-4">
-      I'm a full-stack developer with experience in
+  <div class="max-w-5xl mx-auto px-6 py-12">
+    <!-- Title -->
+    <h1 class="text-5xl font-extrabold text-center text-white">About Me</h1>
+    <p class="text-center text-gray-300 mt-4 text-lg">
+      I'm a full-stack developer passionate about
       <span class="text-green-400 font-bold">Vue.js</span>,
-      <span class="text-blue-400 font-bold">Nuxt.js</span>, and
+      <span class="text-blue-400 font-bold">Nuxt.js</span>,
       <span class="text-yellow-400 font-bold">Next.js</span>, and backend APIs.
     </p>
 
-    <!-- Add a terminal section to make it more aesthetic -->
+    <!-- Terminal Box -->
+    <div class="mt-12 w-full max-w-2xl mx-auto">
+      <!-- Terminal Header -->
+      <div class="bg-gray-900 rounded-t-lg flex items-center px-4 py-2">
+        <span class="w-3 h-3 bg-red-500 rounded-full mr-2"></span>
+        <span class="w-3 h-3 bg-yellow-500 rounded-full mr-2"></span>
+        <span class="w-3 h-3 bg-green-500 rounded-full"></span>
+      </div>
 
-    <!-- Terminal Section -->
-    <div class="mt-10 w-full max-w-2xl">
+      <!-- Terminal Body -->
       <div
-        class="bg-black/80 text-green-400 font-mono text-lg p-5 rounded-lg border-l-4 border-green-500"
+        class="bg-black text-green-400 font-mono text-lg p-6 rounded-b-lg shadow-lg border border-green-500"
       >
         <p>
           <span class="text-green-400">> $</span>
-          <span> Whoami</span><span class="animate-blink">_</span>
+          <span> whoami</span><span class="animate-blink">_</span>
+        </p>
+        <p class="mt-2">
+          <span class="text-green-400">> $</span>
+          <span class="font-bold text-green-300">{{ typedTextHello }}</span
+          ><span class="animate-blink">_</span>
         </p>
       </div>
-    </div>
-
-    <div class="mt-10 pl-0 md:pl-2.5 lg:pl-4">
-      <p class="text-white font-mono text-lg">
-        > $ {{ typedTextHello }}<span class="animate-blink">_</span>
-      </p>
     </div>
   </div>
 </template>
@@ -36,22 +42,43 @@ useHead({
   meta: [
     {
       name: "About Me Page",
-      content: "An insight to my profile",
+      content: "An insight into my profile",
     },
   ],
 });
 
 const helloFromRaditya =
-  "Hello I am Raditya, an aspiring interdisciplinary techpreneur";
+  " Hello, I am Raditya, an aspiring interdisciplinary techpreneur.";
 
 const typedTextHello = ref("");
+let isDeleting = false;
+let index = 0;
 
-const typeText = async () => {
-  for (let i = 0; i <= helloFromRaditya.length; i++) {
-    setTimeout(() => {
-      typedTextHello.value = helloFromRaditya.slice(0, i);
-    }, i * 100); //100ms
-  }
+const typeText = () => {
+  setTimeout(
+    () => {
+      if (!isDeleting) {
+        if (index < helloFromRaditya.length) {
+          typedTextHello.value += helloFromRaditya[index];
+          index++;
+          typeText();
+        } else {
+          isDeleting = true;
+          setTimeout(typeText, 2000); // Pause before deleting
+        }
+      } else {
+        if (index > 0) {
+          typedTextHello.value = helloFromRaditya.substring(0, index - 1);
+          index--;
+          typeText();
+        } else {
+          isDeleting = false;
+          setTimeout(typeText, 1000); // Pause before retyping
+        }
+      }
+    },
+    isDeleting ? 50 : 100
+  ); // Faster delete speed
 };
 
 onMounted(() => {
