@@ -8,8 +8,8 @@
       :style="{
         left: `${x}px`,
         top: `${y}px`,
-        width: `200px`,
-        height: `200px`,
+        width: `${size}px`,
+        height: `${size}px`,
       }"
     />
     <main class="flex-grow p-10">
@@ -19,6 +19,14 @@
 </template>
 
 <script setup lang="ts">
-import { useMouse } from "@vueuse/core";
+import { useMouse, useWindowSize } from "@vueuse/core";
 const { x, y } = useMouse();
+const { width, height } = useWindowSize();
+
+const dx = computed(() => Math.abs(x.value - width.value / 2));
+const dy = computed(() => Math.abs(y.value - height.value / 2));
+
+const distance = computed(() => Math.sqrt(dx.value ** 2 + dy.value ** 2));
+
+const size = computed(() => Math.max(200 - distance.value, 100));
 </script>
