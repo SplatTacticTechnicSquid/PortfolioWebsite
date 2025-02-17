@@ -25,7 +25,7 @@
       @click="goHome"
       class="mt-6 flex items-center gap-2 px-6 py-3 bg-red-500 text-white font-bold rounded-lg hover:bg-red-600 transition-all duration-300"
     >
-      <NuxtIcon name="home" class="w-6 h-6" />
+      <Icon name="heroicons:home" />
       Take me home
     </button>
   </div>

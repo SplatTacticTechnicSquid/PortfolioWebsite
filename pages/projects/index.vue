@@ -19,7 +19,7 @@ const projects = [
     id: "nuxt-portfolio",
     name: "Nuxt Portfolio",
     description: "A fast Nuxt 3 portfolio",
-    link: "/projects/projects_detail/nuxt_portfolio",
+    link: "/projects/projects_detail/nuxt-portfolio",
   },
   {
     id: "iot-weatherstation",
@@ -38,7 +38,7 @@ const projects = [
     id: "intelligent-iot-smokedetector",
     name: "Intelligent IOT Smoke Detector",
     description: "Intelligent Smoke Detector based on IOT",
-    link: "/projects/intelligent-iot-smokedetector",
+    link: "/projects/projects_detail/intelligent-iot-smokedetector",
   },
 ];
 </script>
