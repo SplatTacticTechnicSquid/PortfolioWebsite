@@ -19,20 +19,20 @@ const projects = [
     id: "nuxt-portfolio",
     name: "Nuxt Portfolio",
     description: "A fast Nuxt 3 portfolio",
-    link: "/projects/nuxt-portfolio",
+    link: "/projects/projects_detail/nuxt_portfolio",
   },
   {
     id: "iot-weatherstation",
     name: "Weather Station Based on Arduino",
     description:
       "Weather Station using Arduino UNO with DHT22 and MQ-2 Sensors",
-    link: "/projects/iot-weatherstation",
+    link: "/projects/projects_detail/iot-weatherstation",
   },
   {
     id: "smartparking-logger",
     name: "Smartphone Parking Log Application",
     description: "",
-    link: "/projects/smartparking-logger",
+    link: "/projects/projects_detail/smartparking-logger",
   },
   {
     id: "intelligent-iot-smokedetector",
