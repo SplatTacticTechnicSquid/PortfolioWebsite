@@ -1,10 +1,9 @@
 <template>
-  <main
-    class="relative min-h-screen bg-cover bg-center bg-fixed"
-    style="background-image: url('/images/about-bg.jpg')"
-  >
-    <!-- Background Overlay -->
-    <div class="absolute inset-0 bg-black/70"></div>
+  <main class="relative min-h-screen bg-cover bg-center bg-fixed">
+    <!-- Background Overlay 
+     style="background-image: url('/images/about-bg.jpg')"
+         <div class="absolute inset-0 bg-black/70"></div>
+-->
 
     <div class="relative z-10 max-w-5xl mx-auto px-6 py-12 text-white">
       <!-- Header -->
