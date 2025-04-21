@@ -13,8 +13,8 @@
           I am a
           <span class="text-green-400 font-bold">full-stack developer</span>
           passionate about <span class="text-blue-400 font-bold">Vue.js</span>,
-          <span class="text-yellow-400 font-bold">Next.js</span>, and backend
-          development.
+          <span class="text-yellow-400 font-bold">Next.js</span>, in creating
+          responsive web designs.
         </p>
       </header>
 
@@ -134,21 +134,35 @@ const skills = ref([
   { name: "Tailwind CSS", icon: "logos:tailwindcss-icon" },
   { name: "TypeScript", icon: "logos:typescript-icon" },
   { name: "Node.js", icon: "logos:nodejs-icon" },
-  { name: "Golang", icon: "logos:go" },
-  { name: "Docker", icon: "logos:docker-icon" },
+  { name: "Arduino", icon: "logos:arduino" },
+  { name: "Linux Operating System", icon: "logos:ubuntu" },
 ]);
 
 // Experience Data
 const experiences = ref([
   {
     role: "Full-Stack Developer",
-    company: "Freelance",
-    description: "Worked on various web apps using Vue, Nuxt, and Next.js.",
+    company: "TelkomSigma",
+    description:
+      "Worked on various web apps using Vue, Nuxt, and Next.js. Built REST APIs and integrated with front end systems.",
   },
   {
-    role: "Software Intern",
-    company: "XYZ Tech",
-    description: "Built REST APIs and integrated Vue.js frontend.",
+    role: "ICT Teacher",
+    company: "Madrasah Muallimiin Muhammadiyah Yogyakarta",
+    description:
+      "Highschool IT teacher focusing on simple software development for Year 8-10. Covering the aspect of basic algorithms taught to students. Class involves making scratch game with inputs and loops, and basic web development for Year 10 using HTML & CSS.",
+  },
+  {
+    role: "Blockchain learner (student) and instructor",
+    company: "Gimbalabs Indonesia",
+    description:
+      "Both as a learner and instructor, I facilitated the class of Blockchain based on Cardano protocols presented by Gimbalabs. The program is held in collaboration with Universitas Gadjah Mada.",
+  },
+  {
+    role: "Hardware and Instrumentation Developer",
+    company: "Geoseismal Research Center",
+    description:
+      "Internship program focusing on instrumentation development and hardware assembly of seismic instruments focused on the realm of geophysics and sub surface scanning materials.",
   },
 ]);
 </script>

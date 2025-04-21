@@ -16,12 +16,6 @@ import ProjectCard from "@/components/ProjectCard.vue";
 
 const projects = [
   {
-    id: "nuxt-portfolio",
-    name: "Nuxt Portfolio",
-    description: "A fast Nuxt 3 portfolio",
-    link: "/projects/project_details/nuxt-portfolio",
-  },
-  {
     id: "iot-weatherstation",
     name: "Weather Station Based on Arduino",
     description:
