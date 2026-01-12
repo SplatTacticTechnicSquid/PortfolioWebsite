@@ -3,8 +3,8 @@
     <h1 class="text-4xl font-bold text-white">Get in Touch</h1>
 
     <p class="text-gray-300 mt-3 max-w-2xl text-center">
-      Whether it's a project idea, collaboration, or just a friendly hello —
-      feel free to reach out. I’d love to connect!
+      Whether it's a project idea, collaboration, or just a friendly hello. Feel
+      free to reach out. I’d love to connect!
     </p>
 
     <!-- EMAIL CARD -->
