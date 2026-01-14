@@ -1,7 +1,9 @@
 <template>
-  <nav class="w-full bg-gray-900 text-white py-4 px-6">
+  <nav
+    class="w-full sticky top-0 z-50 bg-white/10 rounded-sm backdrop-blur-xl border-b border-white/20 shadow-[0_8px_32px_0_rgba(0,0,0,0.37)] text-white py-4 px-6"
+  >
     <div class="max-w-6xl mx-auto flex justify-between items-center">
-      <NuxtLink to="/" class="text-xl font-bold">Raditya's Portfolio</NuxtLink>
+      <NuxtLink to="/" class="text-2xl font-bold">Raditya's Portfolio</NuxtLink>
 
       <!-- Mobile Menu Toggle -->
       <button

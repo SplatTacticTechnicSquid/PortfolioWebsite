@@ -1,33 +1,58 @@
 <template>
-  <div class="p-10 text-center space-y-6">
+  <div class="min-h-[70vh] flex flex-col justify-center items-center px-6">
     <h1 class="text-4xl font-bold text-white">Get in Touch</h1>
-    <ContactForm />
 
-    <div class="social-media mt-10">
-      <h2 class="text-2xl font-semibold text-white mb-4">
-        Connect with me on social media
-      </h2>
-      <div class="flex justify-center space-x-6">
+    <p class="text-gray-300 mt-3 max-w-2xl text-center">
+      Whether it's a project idea, collaboration, or just a friendly hello. Feel
+      free to reach out. I’d love to connect!
+    </p>
+
+    <!-- EMAIL CARD -->
+    <div
+      class="mt-10 bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl px-8 py-6 text-center shadow-xl"
+    >
+      <h2 class="text-2xl font-semibold text-green-400">Email Me</h2>
+      <p class="text-gray-300 mt-2">
+        email me at radityaprtm2002@gmail.com or click on the button below:
+      </p>
+      <a
+        href="mailto:your@email.com"
+        class="inline-block mt-4 px-6 py-3 rounded-xl bg-green-500 hover:bg-green-600 font-semibold"
+      >
+        Send Email
+      </a>
+    </div>
+
+    <!-- SOCIAL SECTION -->
+    <div class="mt-12 text-center">
+      <h2 class="text-2xl font-semibold text-white">Social Media</h2>
+      <p class="text-gray-400 mt-2">Let’s connect and say hi 👋</p>
+
+      <div class="flex justify-center gap-8 mt-6">
         <a
-          href="https://www.linkedin.com"
+          class="flex items-center gap-2 hover:text-blue-400 transition"
+          href="https://linkedin.com/in/yourname"
           target="_blank"
-          class="text-white hover:text-blue-500 text-3xl"
         >
-          <Icon icon="mdi:linkedin" />
+          <Icon icon="mdi:linkedin" class="text-3xl" />
+          <span class="text-gray-300 text-sm">@raditya-rifqi-pratama</span>
+        </a>
+
+        <a
+          class="flex items-center gap-2 hover:text-pink-500 transition"
+          href="https://github.com/radityaprtm"
+          target="_blank"
+        >
+          <Icon icon="mdi:github" class="text-3xl" />
+          <span class="text-gray-300 text-sm">@radityaprtm</span>
         </a>
         <a
-          href="https://www.instagram.com"
+          class="flex items-center gap-2 hover:text-pink-500 transition"
+          href="https://discord.com/"
           target="_blank"
-          class="text-white hover:text-pink-500 text-3xl"
         >
-          <Icon icon="mdi:instagram" />
-        </a>
-        <a
-          href="https://www.facebook.com"
-          target="_blank"
-          class="text-white hover:text-blue-600 text-3xl"
-        >
-          <Icon icon="mdi:facebook" />
+          <Icon icon="mdi:discord" class="text-3xl" />
+          <span class="text-gray-300 text-sm">@discord</span>
         </a>
       </div>
     </div>
@@ -35,6 +60,5 @@
 </template>
 
 <script setup>
-import ContactForm from "@/components/ContactForm.vue";
 import { Icon } from "@iconify/vue";
 </script>
