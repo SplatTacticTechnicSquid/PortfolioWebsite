@@ -59,6 +59,18 @@
       </ol>
     </section>
 
+    <!-- FLOWCHART -->
+    <section class="mb-16">
+      <h2 class="text-2xl font-semibold mb-4">System Flowchart</h2>
+
+      <NuxtImg
+        src="/images/projects/vehicleparklog/flowchartmobile.png"
+        width="400"
+        format="webp"
+        class="rounded-lg shadow-md max-w-4xl mx-auto"
+      />
+    </section>
+
     <!-- TECH STACK -->
     <section class="mb-12">
       <h2 class="text-2xl font-semibold mb-6">Technology Stack</h2>
