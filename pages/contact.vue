@@ -31,7 +31,7 @@
       <div class="flex justify-center gap-8 mt-6">
         <a
           class="flex items-center gap-2 hover:text-blue-400 transition"
-          href="https://linkedin.com/in/yourname"
+          href="https://linkedin.com/in/raditya-rifqi-pratama"
           target="_blank"
         >
           <Icon icon="mdi:linkedin" class="text-3xl" />
@@ -48,11 +48,11 @@
         </a>
         <a
           class="flex items-center gap-2 hover:text-pink-500 transition"
-          href="https://discord.com/"
+          href="https://discordapp.com/users/990147835091623956"
           target="_blank"
         >
           <Icon icon="mdi:discord" class="text-3xl" />
-          <span class="text-gray-300 text-sm">@discord</span>
+          <span class="text-gray-300 text-sm">@discoradit2257</span>
         </a>
       </div>
     </div>
