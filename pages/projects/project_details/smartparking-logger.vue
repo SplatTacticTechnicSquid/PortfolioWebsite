@@ -80,7 +80,7 @@
           <h3 class="font-semibold mb-2">Frontend</h3>
           <ul class="text-gray-300 space-y-1">
             <li>MIT App Inventor (Android)</li>
-            <li>GPS & Sensor Integration</li>
+            <li>GPS & Sensor Integration using user's smartphone</li>
             <li>WebSocket Communication</li>
           </ul>
         </div>
@@ -121,8 +121,12 @@
 
     <div class="flex justify-between">
       <!-- NAVIGATION -->
-      <NuxtLink to="/projects" class="text-blue-400 hover:underline">
-        ← Back to Projects
+      <NuxtLink
+        to="/projects"
+        class="inline-flex items-center gap-2 text-blue-400 hover:underline"
+      >
+        <Icon name="material-symbols:arrow-back" class="text-xl" />
+        <span class="leading-none">Back to Projects</span>
       </NuxtLink>
       <a
         href="https://www.canva.com/design/DAG-c6vTEe4/cl6AtFSowh65ynHewP02Xw/edit?utm_content=DAG-c6vTEe4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
