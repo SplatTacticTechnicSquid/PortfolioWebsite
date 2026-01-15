@@ -5,8 +5,23 @@
       <h1 class="text-4xl font-bold text-white">
         Mobile Network Socket Programming
       </h1>
-      <p class="text-gray-400 mt-4">Location Logging System</p>
+      <h2 class="text-2xl text-gray-400 mt-4">Location Logging System</h2>
     </header>
+
+    <div class="flex justify-center gap-4 mb-12">
+      <NuxtImg
+        src="/images/projects/vehicleparklog/appui.png"
+        width="400"
+        format="webp"
+        class="rounded-lg"
+      />
+      <NuxtImg
+        src="/images/projects/vehicleparklog/appui2.png"
+        width="400"
+        format="webp"
+        class="rounded-lg"
+      />
+    </div>
 
     <!-- MOTIVATION -->
     <section class="mb-12">
@@ -92,10 +107,17 @@
       </p>
     </section>
 
-    <!-- NAVIGATION -->
-    <NuxtLink to="/projects" class="text-blue-400 hover:underline">
-      ← Back to Projects
-    </NuxtLink>
+    <div class="flex justify-between">
+      <!-- NAVIGATION -->
+      <NuxtLink to="/projects" class="text-blue-400 hover:underline">
+        ← Back to Projects
+      </NuxtLink>
+      <a
+        href="https://www.canva.com/design/DAG-c6vTEe4/cl6AtFSowh65ynHewP02Xw/edit?utm_content=DAG-c6vTEe4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+        target="_blank"
+        >Link to Canva presentation</a
+      >
+    </div>
   </section>
 </template>
 
