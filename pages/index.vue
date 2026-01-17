@@ -48,6 +48,13 @@
       <!-- RIGHT IMAGE / FRAME -->
       <div class="hidden md:block rounded-3xl border-4 border-green-400 p-3">
         <!-- <img src="/me.png" class="rounded-2xl w-[380px]" /> -->
+        <NuxtImg
+          src="/images/profile/myself.png"
+          width="300"
+          format="webp"
+          class="rounded-lg select-none pointer-events-none"
+          draggable="false"
+        />
       </div>
     </div>
   </section>
