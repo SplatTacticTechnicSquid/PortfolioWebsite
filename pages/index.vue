@@ -20,11 +20,20 @@
 
         <div class="flex gap-4 mt-6">
           <NuxtLink
-            to="/files/RadityaCV.pdf"
+            to="https://drive.google.com/file/d/1ccLY2tCc15WVbjFE1n052LZXc70F1N1w/view?usp=sharing"
             download
             class="bg-green-500 hover:bg-green-600 px-6 py-3 rounded-lg font-semibold"
+            target="_blank"
           >
-            Download CV
+            Link to my CV
+          </NuxtLink>
+
+          <NuxtLink
+            to="https://drive.google.com/file/d/17u3tEcoj_pthjvDSUpYLRXCbL-pK14vC/view?usp=sharing"
+            class="bg-blue-500 hover:bg-green-600 px-6 py-3 rounded-lg font-semibold"
+            target="_blank"
+          >
+            My Portfolio Presentation
           </NuxtLink>
 
           <NuxtLink
@@ -39,6 +48,13 @@
       <!-- RIGHT IMAGE / FRAME -->
       <div class="hidden md:block rounded-3xl border-4 border-green-400 p-3">
         <!-- <img src="/me.png" class="rounded-2xl w-[380px]" /> -->
+        <NuxtImg
+          src="/images/profile/myself.png"
+          width="300"
+          format="webp"
+          class="rounded-lg select-none pointer-events-none"
+          draggable="false"
+        />
       </div>
     </div>
   </section>

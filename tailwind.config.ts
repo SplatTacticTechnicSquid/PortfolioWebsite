@@ -6,6 +6,7 @@ export default {
     "./layouts/**/*.vue",
     "./pages/**/*.vue",
     "./app.vue",
+    "./plugins/**/*.{js,ts}",
   ],
   theme: {
     extend: {},
