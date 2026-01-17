@@ -51,10 +51,13 @@
       >
         <!-- Image -->
         <div class="flex-1 flex justify-center">
-          <img
-            src=""
-            alt="Profile"
-            class="rounded-full w-72 h-72 object-cover shadow-lg"
+          <NuxtImg
+            src="/images/profile/myself2.png"
+            alt="profile"
+            width="300"
+            format="webp"
+            class="rounded-full w-72 h-72 object-cover shadow-lg select-none pointer-events-none"
+            draggable="false"
           />
         </div>
 
