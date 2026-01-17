@@ -16,7 +16,7 @@
         email me at radityaprtm2002@gmail.com or click on the button below:
       </p>
       <a
-        href="mailto:your@email.com"
+        href="mailto:radityaprtm2002@email.com"
         class="inline-block mt-4 px-6 py-3 rounded-xl bg-green-500 hover:bg-green-600 font-semibold"
       >
         Send Email
