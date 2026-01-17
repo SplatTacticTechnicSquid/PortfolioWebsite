@@ -83,18 +83,29 @@
           </p>
 
           <!-- Stats -->
-          <div class="grid grid-cols-3 gap-6 mt-8 text-center">
-            <div>
-              <h3 class="text-4xl font-bold text-yellow-500">95</h3>
-              <p class="text-gray-700 text-sm">Persons Mentored</p>
+          <div class="grid grid-cols-2 gap-6 mt-8 text-center items-center">
+            <!-- UGM Alumni -->
+            <div class="flex flex-col items-center">
+              <NuxtImg
+                src="/images/logos/UGM.png"
+                width="125"
+                height="125"
+                format="webp"
+                class="rounded-lg object-contain"
+              />
+              <p class="text-white text-sm mt-2">Alumni of</p>
             </div>
-            <div>
-              <h3 class="text-4xl font-bold text-yellow-500">395</h3>
-              <p class="text-gray-700 text-sm">Happy Customers</p>
-            </div>
-            <div>
-              <h3 class="text-4xl font-bold text-yellow-500">25</h3>
-              <p class="text-gray-700 text-sm">Value Proposition</p>
+
+            <!-- Telkomsigma -->
+            <div class="flex flex-col items-cente p-4 rounded-lg">
+              <NuxtImg
+                src="/images/logos/telkomsigmalogo.png"
+                width="170"
+                height=""
+                format="webp"
+                class="rounded-lg object-contain"
+              />
+              <p class="text-white text-sm mt-18">Currently Working at</p>
             </div>
           </div>
 
@@ -147,9 +158,10 @@
         <article class="mb-6 p-6 bg-white/10 rounded-lg">
           <h3 class="text-2xl font-bold text-yellow-400">
             <span
-              class="inline-block text-yellow-400 bg-gray-600 font-bold italic transform -skew-x-6"
+              class="inline-block text-yellow-400 font-bold italic transform -skew-x-6"
               style="
-                text-shadow: 0 0 4px rgba(255, 215, 0, 0.7),
+                text-shadow:
+                  0 0 4px rgba(255, 215, 0, 0.7),
                   0 0 8px rgba(255, 165, 0, 0.5);
               "
               >Current Role:</span
@@ -178,9 +190,10 @@
         <article class="mb-6 p-6 bg-white/10 rounded-lg">
           <h3 class="text-2xl font-bold text-yellow-400">
             <span
-              class="inline-block text-yellow-400 bg-gray-600 font-bold italic transform -skew-x-6"
+              class="inline-block text-yellow-400 font-bold italic transform -skew-x-6"
               style="
-                text-shadow: 0 0 4px rgba(255, 215, 0, 0.7),
+                text-shadow:
+                  0 0 4px rgba(255, 215, 0, 0.7),
                   0 0 8px rgba(255, 165, 0, 0.5);
               "
             >
@@ -199,9 +212,10 @@
         <article class="mb-6 p-6 bg-white/10 rounded-lg">
           <h3 class="text-2xl font-bold text-yellow-400">
             <span
-              class="inline-block text-yellow-400 bg-gray-600 font-bold italic transform -skew-x-6"
+              class="inline-block text-yellow-400 font-bold italic transform -skew-x-6"
               style="
-                text-shadow: 0 0 4px rgba(255, 215, 0, 0.7),
+                text-shadow:
+                  0 0 4px rgba(255, 215, 0, 0.7),
                   0 0 8px rgba(255, 165, 0, 0.5);
               "
               >Intern:</span
@@ -274,7 +288,7 @@ const typeText = () => {
         }
       }
     },
-    isDeleting ? 50 : 100
+    isDeleting ? 50 : 100,
   );
 };
 
