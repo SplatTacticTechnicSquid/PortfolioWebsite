@@ -128,11 +128,12 @@
         <Icon name="material-symbols:arrow-back" class="text-xl" />
         <span class="leading-none">Back to Projects</span>
       </NuxtLink>
-      <a
-        href="https://www.canva.com/design/DAG-c6vTEe4/cl6AtFSowh65ynHewP02Xw/edit?utm_content=DAG-c6vTEe4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+      <NuxtLink
+        to="https://www.canva.com/design/DAG-c6vTEe4/cl6AtFSowh65ynHewP02Xw/edit?utm_content=DAG-c6vTEe4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
         target="_blank"
-        >Link to Canva presentation</a
       >
+        Link to Canva presentation
+      </NuxtLink>
     </div>
   </section>
 </template>
