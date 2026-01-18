@@ -87,45 +87,46 @@
 
           <!-- Stats -->
           <div class="grid grid-cols-2 gap-6 mt-8 text-center items-center">
+            
             <!-- UGM Alumni -->
             <div class="flex flex-col items-center">
-              <NuxtImg
-                src="/images/logos/UGM.png"
-                width="125"
-                height="125"
-                format="webp"
-                class="rounded-lg object-contain"
-              />
-              <p class="text-white text-sm mt-2">Alumni of</p>
+              <div class="h-32 w-32 flex items-center justify-center">
+                <NuxtImg
+                  src="/images/logos/UGM.png"
+                  class="max-h-full max-w-full object-contain"
+                  format="webp"
+                />
+              </div>
+              <p class="mt-2 text-sm text-white">Alumni of</p>
             </div>
 
             <!-- Telkomsigma -->
-            <div class="flex flex-col items-cente p-4 rounded-lg">
-              <NuxtImg
-                src="/images/logos/telkomsigmalogo.png"
-                width="170"
-                height=""
-                format="webp"
-                class="rounded-lg object-contain"
-              />
-              <p class="text-white text-sm mt-18">Currently Working at</p>
+            <div class="flex flex-col items-center">
+              <div class="h-32 w-32 flex items-center justify-center">
+                <NuxtImg
+                  src="/images/logos/telkomsigmalogo.png"
+                  class="max-h-full max-w-full object-contain"
+                  format="webp"
+                />
+              </div>
+              <p class="mt-2 text-sm text-white">Currently Working at</p>
             </div>
           </div>
 
-          <!-- Contact -->
+          <!-- Contact
           <div class="mt-8 flex items-center justify-end">
             <div>
-              <!-- <p class="text-white text-xl font-extrabold">
+              <p class="text-white text-xl font-extrabold">
                 radityaprtm2002@gmail.com
-              </p> -->
+              </p>
             </div>
 
-            <!-- <button
+            <button
               class="bg-yellow-500 hover:bg-yellow-600 text-black px-6 py-3 rounded-full font-bold transition"
             >
               ABOUT ME
-            </button> -->
-          </div>
+            </button>
+          </div> -->
         </div>
       </section>
 
