@@ -250,15 +250,16 @@
               Part-Time:
             </span>
 
-            IT Teacher
+            Information Communication Technology Teacher
           </h3>
           <p class="text-base sm:text-lg text-gray-300">
             Madrasah Muallimin Muhammadiyah
           </p>
           <p class="mt-2">
             Formerly an educator in a private school, I have been teaching
-            students that follows the UK IGCSE curriculum
+            students that follows the UK IGCSE curriculum.
           </p>
+          <p></p>
         </article>
 
         <article class="mb-6 p-4 sm:p-6 bg-white/10 rounded-lg">
@@ -277,7 +278,9 @@
           <p class="text-base sm:text-lg text-gray-300">
             Geoseismal Research Center
           </p>
-          <p class="mt-2">As</p>
+          <p class="mt-2">
+            During my university, I have taken the role of an intern
+          </p>
         </article>
       </section>
 
