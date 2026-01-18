@@ -87,45 +87,46 @@
 
           <!-- Stats -->
           <div class="grid grid-cols-2 gap-6 mt-8 text-center items-center">
+            
             <!-- UGM Alumni -->
             <div class="flex flex-col items-center">
-              <NuxtImg
-                src="/images/logos/UGM.png"
-                width="125"
-                height="125"
-                format="webp"
-                class="rounded-lg object-contain"
-              />
-              <p class="text-white text-sm mt-2">Alumni of</p>
+              <div class="h-32 w-32 flex items-center justify-center">
+                <NuxtImg
+                  src="/images/logos/UGM.png"
+                  class="max-h-full max-w-full object-contain"
+                  format="webp"
+                />
+              </div>
+              <p class="mt-2 text-sm text-white">Alumni of</p>
             </div>
 
             <!-- Telkomsigma -->
-            <div class="flex flex-col items-cente p-4 rounded-lg">
-              <NuxtImg
-                src="/images/logos/telkomsigmalogo.png"
-                width="170"
-                height=""
-                format="webp"
-                class="rounded-lg object-contain"
-              />
-              <p class="text-white text-sm mt-18">Currently Working at</p>
+            <div class="flex flex-col items-center">
+              <div class="h-32 w-32 flex items-center justify-center">
+                <NuxtImg
+                  src="/images/logos/telkomsigmalogo.png"
+                  class="max-h-full max-w-full object-contain"
+                  format="webp"
+                />
+              </div>
+              <p class="mt-2 text-sm text-white">Currently Working at</p>
             </div>
           </div>
 
-          <!-- Contact -->
+          <!-- Contact
           <div class="mt-8 flex items-center justify-end">
             <div>
-              <!-- <p class="text-white text-xl font-extrabold">
+              <p class="text-white text-xl font-extrabold">
                 radityaprtm2002@gmail.com
-              </p> -->
+              </p>
             </div>
 
-            <!-- <button
+            <button
               class="bg-yellow-500 hover:bg-yellow-600 text-black px-6 py-3 rounded-full font-bold transition"
             >
               ABOUT ME
-            </button> -->
-          </div>
+            </button>
+          </div> -->
         </div>
       </section>
 
@@ -174,20 +175,57 @@
           <p class="text-lg text-gray-300">
             PT. SIGMA CIPTA CARAKA (Telkomsigma)
           </p>
-          <p class="mt-2">
-            As a junior programmer I have developed front-end solutions with
-            various Javascript framework including Next.JS, Vue.JS, Nuxt.JS and
-            AngularJS within the company. Moreover, I develop REST API
-            integration with Axios framework as part of the Javascript CRUD
-            approach. In project work I adopt the AGILE SCRUM technique where we
-            use sprint planning for project review and completion method based
-            on weekly cycles. Has experience in CI/CD with GitLab pipeline that
-            uses Jenkins for deployment. Furthermore, I have experience in using
-            version managering software such as GitLab and GitHub as the main
-            repository. In IT consulting with user, I have used Kanban template
-            such as Jira, Trello and GitLab issues tracking to manage a user
-            request.
-          </p>
+          <div class="mt-2">
+            <p class="mb-2">
+              As a junior programmer I have developed front-end solutions with
+              various Javascript framework including Next.JS, Vue.JS, Nuxt.JS
+              and Angular.JS within the company.
+            </p>
+
+            <p class="mb-2">
+              Moreover, I develop REST API integration with Axios framework as
+              part of the Javascript CRUD approach. In project work I adopt the
+              AGILE SCRUM technique where we use sprint planning for project
+              review and completion method based on weekly cycles. As part of
+              development, I have experience in CI/CD with GitLab pipeline that
+              uses Jenkins for deployment.
+            </p>
+
+            <p class="mb-4">
+              Furthermore, I have experience in using version managering
+              software such as GitLab and GitHub as the main repository. In IT
+              consulting with user, I have used Kanban template such as Jira,
+              Trello and GitLab issues tracking to manage a user request.
+            </p>
+
+            <div class="grid md:grid-cols-3 gap-6">
+              <div class="bg-gray-600 p-6 rounded-lg">
+                <p>Frontend Framework</p>
+                <ul class="indent-8 list-disc list-inside">
+                  <li class="mb-1">Vue.JS</li>
+                  <li class="mb-1">Next.JS</li>
+                  <li class="mb-1">Nuxt.JS</li>
+                </ul>
+              </div>
+
+              <div class="bg-gray-600 p-6 rounded-lg">
+                <p>Backend Framework</p>
+                <ul class="indent-8 list-disc list-inside">
+                  <li>Python FASTAPI</li>
+                </ul>
+              </div>
+
+              <div class="bg-gray-600 p-6 rounded-lg">
+                <p>Tools</p>
+                <ul class="indent-8 list-disc list-inside">
+                  <li>Postman API</li>
+                  <li>Swagger</li>
+                  <li>CURL</li>
+                  <li>Git</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </article>
 
         <article class="mb-6 p-6 bg-white/10 rounded-lg">
