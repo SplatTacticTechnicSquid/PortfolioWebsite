@@ -174,20 +174,57 @@
           <p class="text-lg text-gray-300">
             PT. SIGMA CIPTA CARAKA (Telkomsigma)
           </p>
-          <p class="mt-2">
-            As a junior programmer I have developed front-end solutions with
-            various Javascript framework including Next.JS, Vue.JS, Nuxt.JS and
-            AngularJS within the company. Moreover, I develop REST API
-            integration with Axios framework as part of the Javascript CRUD
-            approach. In project work I adopt the AGILE SCRUM technique where we
-            use sprint planning for project review and completion method based
-            on weekly cycles. Has experience in CI/CD with GitLab pipeline that
-            uses Jenkins for deployment. Furthermore, I have experience in using
-            version managering software such as GitLab and GitHub as the main
-            repository. In IT consulting with user, I have used Kanban template
-            such as Jira, Trello and GitLab issues tracking to manage a user
-            request.
-          </p>
+          <div class="mt-2">
+            <p class="mb-2">
+              As a junior programmer I have developed front-end solutions with
+              various Javascript framework including Next.JS, Vue.JS, Nuxt.JS
+              and Angular.JS within the company.
+            </p>
+
+            <p class="mb-2">
+              Moreover, I develop REST API integration with Axios framework as
+              part of the Javascript CRUD approach. In project work I adopt the
+              AGILE SCRUM technique where we use sprint planning for project
+              review and completion method based on weekly cycles. As part of
+              development, I have experience in CI/CD with GitLab pipeline that
+              uses Jenkins for deployment.
+            </p>
+
+            <p class="mb-4">
+              Furthermore, I have experience in using version managering
+              software such as GitLab and GitHub as the main repository. In IT
+              consulting with user, I have used Kanban template such as Jira,
+              Trello and GitLab issues tracking to manage a user request.
+            </p>
+
+            <div class="grid md:grid-cols-3 gap-6">
+              <div class="bg-gray-600 p-6 rounded-lg">
+                <p>Frontend Framework</p>
+                <ul class="indent-8 list-disc list-inside">
+                  <li class="mb-1">Vue.JS</li>
+                  <li class="mb-1">Next.JS</li>
+                  <li class="mb-1">Nuxt.JS</li>
+                </ul>
+              </div>
+
+              <div class="bg-gray-600 p-6 rounded-lg">
+                <p>Backend Framework</p>
+                <ul class="indent-8 list-disc list-inside">
+                  <li>Python FASTAPI</li>
+                </ul>
+              </div>
+
+              <div class="bg-gray-600 p-6 rounded-lg">
+                <p>Tools</p>
+                <ul class="indent-8 list-disc list-inside">
+                  <li>Postman API</li>
+                  <li>Swagger</li>
+                  <li>CURL</li>
+                  <li>Git</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </article>
 
         <article class="mb-6 p-6 bg-white/10 rounded-lg">
