@@ -5,11 +5,17 @@
          <div class="absolute inset-0 bg-black/70"></div>
 -->
 
-    <div class="relative z-10 max-w-5xl mx-auto px-6 py-12 text-white">
+    <div
+      class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 py-8 md:py-12 text-white"
+    >
       <!-- Header -->
       <header class="text-center">
-        <h1 class="text-6xl font-extrabold tracking-wide">About Me</h1>
-        <p class="text-gray-300 text-lg mt-4">
+        <h1
+          class="text-3xl sm:text-4xl md:text-6xl font-extrabold tracking-wide"
+        >
+          About Me
+        </h1>
+        <p class="text-gray-300 text-base sm:text-lg mt-4 max-w-3xl mx-auto">
           I am a
           <span class="text-green-400 font-bold">full-stack developer</span>
           passionate about
@@ -22,14 +28,14 @@
       </header>
 
       <!-- Terminal Section -->
-      <section class="mt-12 w-full max-w-2xl mx-auto">
+      <section class="mt-10 w-full max-w-2xl mx-auto px-2 sm:px-0">
         <div class="bg-gray-700 rounded-t-lg flex items-center px-4 py-2">
           <span class="w-3 h-3 bg-red-500 rounded-full mr-2"></span>
           <span class="w-3 h-3 bg-yellow-500 rounded-full mr-2"></span>
           <span class="w-3 h-3 bg-green-500 rounded-full"></span>
         </div>
         <div
-          class="bg-black text-green-400 font-mono text-lg p-6 rounded-b-lg shadow-lg border border-green-500"
+          class="bg-black text-green-400 font-mono text-sm sm:text-base md:text-lg p-4 sm:p-6 rounded-b-lg shadow-lg border border-green-500"
         >
           <p>
             <span class="text-green-400">> $</span> whoami<span
@@ -47,7 +53,7 @@
 
       <!-- Biography -->
       <section
-        class="mt-16 bg-gray-800 text-gray-800 rounded-3xl shadow-xl p-10 flex flex-col md:flex-row items-center gap-10"
+        class="mt-12 bg-gray-800 rounded-3xl shadow-xl p-6 sm:p-8 md:p-10 flex flex-col md:flex-row items-center gap-8 md:gap-10"
       >
         <!-- Image -->
         <div class="flex-1 flex justify-center">
@@ -56,7 +62,7 @@
             alt="profile"
             width="300"
             format="webp"
-            class="rounded-full w-72 h-72 object-cover shadow-lg select-none pointer-events-none"
+            class="rounded-full w-40 h-40 sm:w-56 sm:h-56 md:w-72 md:h-72 object-cover shadow-lg select-none pointer-events-none"
             draggable="false"
           />
         </div>
@@ -69,7 +75,9 @@
             About Me
           </span>
 
-          <h2 class="mt-4 text-5xl font-extrabold text-yellow-500">
+          <h2
+            class="mt-4 text-3xl sm:text-4xl md:text-5xl font-extrabold text-yellow-500"
+          >
             Hi
             <span class="text-blue-500">I'm Raditya!</span>
           </h2>
@@ -86,8 +94,9 @@
           </p>
 
           <!-- Stats -->
-          <div class="grid grid-cols-2 gap-6 mt-8 text-center items-center">
-            
+          <div
+            class="grid grid-cols-2 gap-4 sm:gap-6 mt-6 sm:mt-8 text-center items-center"
+          >
             <!-- UGM Alumni -->
             <div class="flex flex-col items-center">
               <div class="h-32 w-32 flex items-center justify-center">
@@ -159,7 +168,7 @@
           {{ displayedText }}<span class="cursor"></span>
         </h2>
 
-        <article class="mb-6 p-6 bg-white/10 rounded-lg">
+        <article class="mb-6 p-4 sm:p-6 bg-white/10 rounded-lg">
           <h3 class="text-2xl font-bold text-yellow-400">
             <span
               class="inline-block text-yellow-400 font-bold italic transform -skew-x-6"
@@ -172,7 +181,7 @@
             >
             Junior Programmer (Fullstack)
           </h3>
-          <p class="text-lg text-gray-300">
+          <p class="text-base sm:text-lg text-gray-300">
             PT. SIGMA CIPTA CARAKA (Telkomsigma)
           </p>
           <div class="mt-2">
@@ -228,7 +237,7 @@
           </div>
         </article>
 
-        <article class="mb-6 p-6 bg-white/10 rounded-lg">
+        <article class="mb-6 p-4 sm:p-6 bg-white/10 rounded-lg">
           <h3 class="text-2xl font-bold text-yellow-400">
             <span
               class="inline-block text-yellow-400 font-bold italic transform -skew-x-6"
@@ -241,16 +250,19 @@
               Part-Time:
             </span>
 
-            IT Teacher
+            Information Communication Technology Teacher
           </h3>
-          <p class="text-lg text-gray-300">Madrasah Muallimin Muhammadiyah</p>
+          <p class="text-base sm:text-lg text-gray-300">
+            Madrasah Muallimin Muhammadiyah
+          </p>
           <p class="mt-2">
             Formerly an educator in a private school, I have been teaching
-            students that follows the UK IGCSE curriculum
+            students that follows the UK IGCSE curriculum.
           </p>
+          <p></p>
         </article>
 
-        <article class="mb-6 p-6 bg-white/10 rounded-lg">
+        <article class="mb-6 p-4 sm:p-6 bg-white/10 rounded-lg">
           <h3 class="text-2xl font-bold text-yellow-400">
             <span
               class="inline-block text-yellow-400 font-bold italic transform -skew-x-6"
@@ -263,8 +275,12 @@
             >
             Hardware and Instrumentation Developer
           </h3>
-          <p class="text-lg text-gray-300">Geoseismal Research Center</p>
-          <p class="mt-2">As</p>
+          <p class="text-base sm:text-lg text-gray-300">
+            Geoseismal Research Center
+          </p>
+          <p class="mt-2">
+            During my university, I have taken the role of an intern
+          </p>
         </article>
       </section>
 

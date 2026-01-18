@@ -1,12 +1,24 @@
 <template>
-  <div class="relative z-10 max-w-5xl mx-auto px-6 py-12 text-white">
-    <h1 class="text-4xl font-bold text-white text-center mb-4">Projects</h1>
+  <div
+    class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 py-10 sm:py-12 text-white"
+  >
+    <h1
+      class="text-2xl sm:text-3xl md:text-4xl font-bold text-white text-center mb-4"
+    >
+      Projects
+    </h1>
 
-    <h3>Showcase portfolio featuring my developed projects:</h3>
-    <div class="flex gap-4 mt-6">
+    <h3
+      class="text-sm sm:text-base text-gray-300 text-center md:text-left max-w-2xl mx-auto md:mx-0"
+    >
+      Showcase portfolio featuring my developed projects:
+    </h3>
+    <div
+      class="flex flex-wrap justify-center md:justify-start gap-3 sm:gap-4 mt-6"
+    >
       <button
         @click="activeFilter = 'all'"
-        class="px-4 py-2 rounded-lg"
+        class="px-4 py-2 sm:py-2.5 rounded-lg text-sm sm:text-base"
         :class="activeFilter === 'all' ? 'bg-blue-500' : 'bg-gray-700'"
       >
         All
@@ -14,7 +26,7 @@
 
       <button
         @click="activeFilter = 'web'"
-        class="px-4 py-2 rounded-lg"
+        class="px-4 py-2 sm:py-2.5 rounded-lg text-sm sm:text-base"
         :class="activeFilter === 'web' ? 'bg-blue-500' : 'bg-gray-700'"
       >
         Web Based Apps
@@ -22,14 +34,16 @@
 
       <button
         @click="activeFilter = 'hardware'"
-        class="px-4 py-2 rounded-lg"
+        class="px-4 py-2 sm:py-2.5 rounded-lg text-sm sm:text-base"
         :class="activeFilter === 'hardware' ? 'bg-blue-500' : 'bg-gray-700'"
       >
         Physical / Hardware Projects
       </button>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mt-8"
+    >
       <ProjectCard
         v-for="project in filteredProjects"
         :key="project.id"
