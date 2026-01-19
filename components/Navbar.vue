@@ -38,6 +38,7 @@
       <NuxtLink to="/about" class="block py-2">About</NuxtLink>
       <NuxtLink to="/projects" class="block py-2">Projects</NuxtLink>
       <NuxtLink to="/contact" class="block py-2">Contact</NuxtLink>
+      <NuxtLink to="/events" class="block py-2">Events</NuxtLink>
     </div>
   </nav>
 </template>
