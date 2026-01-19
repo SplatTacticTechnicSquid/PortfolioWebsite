@@ -7,13 +7,13 @@
     </p>
     <div class="mt-2 flex justify-center gap-4">
       <a
-        href="https://github.com/yourusername"
+        href="https://github.com/radityaprtm"
         target="_blank"
         class="hover:text-white"
         >GitHub</a
       >
       <a
-        href="https://linkedin.com/in/yourusername"
+        href="https://linkedin.com/in/raditya-rifqi-pratama"
         target="_blank"
         class="hover:text-white"
         >LinkedIn</a
