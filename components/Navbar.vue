@@ -26,7 +26,7 @@
       </button>
 
       <!-- Desktop Menu -->
-      <div class="hidden md:flex md:flex-row md:space-x-6">
+      <div class="hidden md:flex md:flex-row md:gap-3">
         <div>
           <NuxtLink to="/about" class="hover:text-blue-400">About</NuxtLink>
         </div>
