@@ -27,14 +27,25 @@
 
       <!-- Desktop Menu -->
       <div class="hidden md:flex space-x-6">
-        <NuxtLink to="/about" class="hover:text-blue-400">About</NuxtLink>
-        <NuxtLink to="/projects" class="hover:text-blue-400">Projects</NuxtLink>
-        <NuxtLink to="/contact" class="hover:text-blue-400">Contact</NuxtLink>
+        <div>
+          <NuxtLink to="/about" class="hover:text-blue-400">About</NuxtLink>
+        </div>
+        <div>
+          <NuxtLink to="/projects" class="hover:text-blue-400"
+            >Projects</NuxtLink
+          >
+        </div>
+        <div>
+          <NuxtLink to="/contact" class="hover:text-blue-400">Contact</NuxtLink>
+        </div>
+        <div>
+          <NuxtLink to="/events" class="hover:text-blue-400">Events</NuxtLink>
+        </div>
       </div>
     </div>
 
     <!-- Mobile Dropdown -->
-    <div v-if="menuOpen" class="md:hidden bg-gray-800 mt-2 p-4">
+    <div v-show="menuOpen" class="md:hidden bg-gray-800 mt-2 p-4">
       <NuxtLink to="/about" class="block py-2">About</NuxtLink>
       <NuxtLink to="/projects" class="block py-2">Projects</NuxtLink>
       <NuxtLink to="/contact" class="block py-2">Contact</NuxtLink>
