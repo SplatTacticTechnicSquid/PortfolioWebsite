@@ -54,6 +54,16 @@
 </template>
 
 <script setup>
+useHead({
+  title: "Projects Index",
+  meta: [
+    {
+      name: "Projects",
+      content: "Projects list",
+    },
+  ],
+});
+
 import ProjectCard from "@/components/ProjectCard.vue";
 
 const activeFilter = ref("all");
