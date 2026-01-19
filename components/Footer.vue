@@ -5,7 +5,7 @@
       <span><Icon name="heroicons-outline:heart" /></span> in Nuxt
       <span> <Icon name="logos:nuxt-icon" /> </span>
     </p>
-    <div class="mt-2 flex justify-center space-x-4">
+    <div class="mt-2 flex justify-center gap-4">
       <a
         href="https://github.com/yourusername"
         target="_blank"
