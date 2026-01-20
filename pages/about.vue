@@ -231,6 +231,7 @@
                   <li>Swagger</li>
                   <li>CURL</li>
                   <li>Git</li>
+                  <li>Jenkins CI/CD</li>
                 </ul>
               </div>
             </div>
@@ -259,6 +260,22 @@
             Formerly an educator in a private school, I have been teaching
             students that follows the UK IGCSE curriculum.
           </p>
+          <p class="mt-2">
+            I have provided mentoring to students on programming related
+            concepts in computer science and IT class on the basis of Scratch
+            programming website for algorithm design and implementation for
+            secondary students.
+          </p>
+          <p class="mt-2">
+            Teaching concepts of web development using HTML5 and CSS to students
+            in IGCSE curriculum where students are instructed to code simple
+            table, headers, lists and background color styling with CSS to make
+            their website.
+          </p>
+          <p class="mt-2">
+            Also taught Python and Javascript for Year 10 in terms of computer
+            programming development
+          </p>
           <p></p>
         </article>
 
@@ -279,7 +296,26 @@
             Geoseismal Research Center
           </p>
           <p class="mt-2">
-            During my university, I have taken the role of an intern
+            During my university, I have taken the role of an intern as a
+            hardware and instrumentation developer with a core research focus in
+            geophysics
+          </p>
+          <p class="mt-2">
+            I developed and assembled geophysical instrumentation for
+            self-potential and electrical impedance measurements, focusing on
+            reliable data acquisition and signal integrity. This included
+            building and soldering sensor wiring and connectors, designing
+            circuitry for signal conditioning such as filtering and
+            amplification, and constructing porous pot electrodes for field
+            measurements.
+          </p>
+          <p class="mt-2">
+            I conducted supervised data acquisition using a DATAQ logging system
+            and programmed a single-board computer (SBC) to automate node
+            switching through multiplexed relay systems. The system enabled
+            efficient self-potential data extraction across multiple measurement
+            nodes, improving accuracy and scalability in electrical measurement
+            workflows.
           </p>
         </article>
       </section>
