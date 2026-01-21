@@ -15,7 +15,7 @@ const route = useRoute();
 const eventId = route.params.id;
 
 const eventComponents = {
-  "nuxt-portfolio": defineAsyncComponent(() => import("./nuxt-portfolio.vue")),
+  // "nuxt-portfolio": defineAsyncComponent(() => import("./nuxt-portfolio.vue")),
 
   "sigma-mengajar": defineAsyncComponent(() => import("./sigma-mengajar.vue")),
   // add more events here
