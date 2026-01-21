@@ -11,48 +11,51 @@
       </p>
     </div>
 
+    <!-- Filters -->
+    <div class="flex justify-center gap-3 mb-8 flex-wrap">
+      <button @click="activeFilter = 'all'" :class="buttonClass('all')">
+        All
+      </button>
+      <button
+        @click="activeFilter = 'Workshop'"
+        :class="buttonClass('Workshop')"
+      >
+        Workshop
+      </button>
+      <button
+        @click="activeFilter = 'Volunteering'"
+        :class="buttonClass('Volunteering')"
+      >
+        Volunteering
+      </button>
+    </div>
+
     <!-- Events Grid -->
     <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-      <div
-        v-for="event in events"
-        :key="event.title"
-        class="rounded-2xl bg-white/5 backdrop-blur border border-white/10 shadow-lg overflow-hidden hover:scale-[1.02] transition"
-      >
-        <!-- Image -->
-        <div class="h-40 bg-gray-700 overflow-hidden">
-          <img
-            :src="event.image"
-            :alt="event.title"
-            class="w-full h-full object-cover"
-          />
-        </div>
-
-        <!-- Content -->
-        <div class="p-6">
-          <h3 class="text-xl font-semibold mb-2">{{ event.title }}</h3>
-          <p class="text-sm text-gray-400 mb-4">{{ event.description }}</p>
-
-          <div class="flex items-center justify-between text-sm text-gray-400">
-            <span>{{ event.date }}</span>
-            <span class="px-3 py-1 rounded-full bg-blue-500/10 text-blue-400">
-              {{ event.type }}
-            </span>
-          </div>
-        </div>
-      </div>
+      <EventCard
+        v-for="event in filteredEvents"
+        :key="event.id"
+        :event="event"
+      />
     </div>
   </section>
 </template>
 
 <script setup>
+import { ref, computed } from "vue";
+import EventCard from "@/components/EventCard.vue";
+const activeFilter = ref("all");
+
 const events = [
   {
+    id: "sigma-mengajar",
     title: "Sigma Mengajar Volunteer",
     description:
       "Teaching volunteer Corporate Social Responsibility program empowering to educate children in need",
     date: "2025",
     type: "Workshop",
     image: "/images/events/sigmamengajar.png",
+    link: "/events/event-details/sigma-mengajar",
   },
 
   {
@@ -89,4 +92,18 @@ const events = [
     image: "/images/events/.jpeg",
   },
 ];
+
+const filteredEvents = computed(() => {
+  if (activeFilter.value === "all") return events;
+  return events.filter((e) => e.type === activeFilter.value);
+});
+
+const buttonClass = (type) => {
+  return [
+    "px-4 py-2 rounded-lg font-semibold transition",
+    activeFilter.value === type
+      ? "bg-blue-500 text-white"
+      : "bg-gray-700 text-gray-200 hover:bg-gray-600",
+  ];
+};
 </script>
