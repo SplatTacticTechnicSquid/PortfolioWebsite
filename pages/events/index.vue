@@ -47,6 +47,15 @@
 <script setup>
 const events = [
   {
+    title: "Sigma Mengajar Volunteer",
+    description:
+      "Teaching volunteer Corporate Social Responsibility program empowering to educate children in need",
+    date: "2025",
+    type: "Workshop",
+    image: "/images/events/sigmamengajar.png",
+  },
+
+  {
     title: "SDLC Seminar",
     description: "Practical Approach to software vulnerability",
     date: "2025",
@@ -60,7 +69,7 @@ const events = [
       "Introduction to blockchain fundamentals for university students.",
     date: "2024",
     type: "Workshop",
-    image: "https://images.unsplash.com/photo-1639322537228-f710d846310a",
+    image: "/images/events/blockchainworkshop.png",
   },
   {
     title: "PartTime ICT Teaching ",
@@ -69,6 +78,15 @@ const events = [
     date: "2024",
     type: "Teaching",
     image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f",
+  },
+
+  {
+    title: "Qatar Animal Welfare Society QAWS Volunteer",
+    description:
+      "Animal Welfare high school volunteer program to care for shelter animals",
+    date: "2017",
+    type: "Workshop",
+    image: "/images/events/.jpeg",
   },
 ];
 </script>
