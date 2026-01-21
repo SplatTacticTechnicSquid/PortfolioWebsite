@@ -2,7 +2,9 @@
   <section class="max-w-6xl mx-auto px-6 py-16">
     <!-- Header -->
     <div class="text-center mb-12">
-      <h1 class="text-4xl md:text-5xl font-bold mb-4">Events & Activities</h1>
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">
+        Activities & Volunteering
+      </h1>
       <p class="text-gray-400 max-w-2xl mx-auto">
         A collection of events, workshops, teaching sessions, and activities
         I’ve been involved in.
@@ -45,6 +47,15 @@
 <script setup>
 const events = [
   {
+    title: "Sigma Mengajar Volunteer",
+    description:
+      "Teaching volunteer Corporate Social Responsibility program empowering to educate children in need",
+    date: "2025",
+    type: "Workshop",
+    image: "/images/events/sigmamengajar.png",
+  },
+
+  {
     title: "SDLC Seminar",
     description: "Practical Approach to software vulnerability",
     date: "2025",
@@ -58,7 +69,7 @@ const events = [
       "Introduction to blockchain fundamentals for university students.",
     date: "2024",
     type: "Workshop",
-    image: "https://images.unsplash.com/photo-1639322537228-f710d846310a",
+    image: "/images/events/blockchainworkshop.png",
   },
   {
     title: "PartTime ICT Teaching ",
@@ -67,6 +78,15 @@ const events = [
     date: "2024",
     type: "Teaching",
     image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f",
+  },
+
+  {
+    title: "Qatar Animal Welfare Society QAWS Volunteer",
+    description:
+      "Animal Welfare high school volunteer program to care for shelter animals",
+    date: "2017",
+    type: "Workshop",
+    image: "/images/events/.jpeg",
   },
 ];
 </script>
