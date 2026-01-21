@@ -2,7 +2,9 @@
   <section class="max-w-6xl mx-auto px-6 py-16">
     <!-- Header -->
     <div class="text-center mb-12">
-      <h1 class="text-4xl md:text-5xl font-bold mb-4">Events & Activities</h1>
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">
+        Activities & Volunteering
+      </h1>
       <p class="text-gray-400 max-w-2xl mx-auto">
         A collection of events, workshops, teaching sessions, and activities
         I’ve been involved in.

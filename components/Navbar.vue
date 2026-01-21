@@ -26,7 +26,7 @@
       </button>
 
       <!-- Desktop Menu -->
-      <div class="hidden md:flex md:flex-row md:gap-3">
+      <div class="hidden md:flex md:flex-row md:gap-4">
         <div>
           <NuxtLink to="/about" class="hover:text-blue-400">About</NuxtLink>
         </div>
@@ -39,7 +39,9 @@
           <NuxtLink to="/contact" class="hover:text-blue-400">Contact</NuxtLink>
         </div>
         <div>
-          <NuxtLink to="/events" class="hover:text-blue-400">Events</NuxtLink>
+          <NuxtLink to="/events" class="hover:text-blue-400"
+            >Activity & Volunteering</NuxtLink
+          >
         </div>
       </div>
     </div>
@@ -49,7 +51,9 @@
       <NuxtLink to="/about" class="block py-2">About</NuxtLink>
       <NuxtLink to="/projects" class="block py-2">Projects</NuxtLink>
       <NuxtLink to="/contact" class="block py-2">Contact</NuxtLink>
-      <NuxtLink to="/events" class="block py-2">Events</NuxtLink>
+      <NuxtLink to="/events" class="block py-2"
+        >Activity & Volunteering</NuxtLink
+      >
     </div>
   </nav>
 </template>
