@@ -17,7 +17,7 @@
     >
       <div class="bg-white/5 rounded-xl p-4 border border-white/10">
         <p class="text-sm text-gray-400">Duration</p>
-        <p class="font-semibold">3 Months</p>
+        <p class="font-semibold">2 days</p>
       </div>
       <div class="bg-white/5 rounded-xl p-4 border border-white/10">
         <p class="text-sm text-gray-400">Location</p>
