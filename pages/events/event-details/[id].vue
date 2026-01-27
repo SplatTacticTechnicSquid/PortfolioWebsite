@@ -18,6 +18,12 @@ const eventComponents = {
   // "nuxt-portfolio": defineAsyncComponent(() => import("./nuxt-portfolio.vue")),
 
   "sigma-mengajar": defineAsyncComponent(() => import("./sigma-mengajar.vue")),
+  "sdlc-seminar": defineAsyncComponent(() => import("./sdlc-seminar.vue")),
+  "blockchain-workshop": defineAsyncComponent(
+    () => import("./blockchain-workshop.vue"),
+  ),
+  "it-teacher": defineAsyncComponent(() => import("./it-teacher.vue")),
+
   // add more events here
 };
 
