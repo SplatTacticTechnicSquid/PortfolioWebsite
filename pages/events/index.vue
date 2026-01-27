@@ -59,28 +59,35 @@ const events = [
   },
 
   {
+    id: "sdlc-seminar",
     title: "SDLC Seminar",
     description: "Practical Approach to software vulnerability",
     date: "2025",
     type: "Workshop",
     image: "/images/events/SDLC.jpeg",
+    link: "/events/event-details/sdlc-seminar",
   },
 
   {
+    id: "blockchain-workshop",
+
     title: "Blockchain Workshop",
     description:
       "Introduction to blockchain fundamentals for university students.",
     date: "2024",
     type: "Workshop",
     image: "/images/events/blockchainworkshop.png",
+    link: "/events/event-details/blockchain-workshop",
   },
   {
+    id: "it-teacher",
     title: "PartTime ICT Teaching ",
     description:
       "Teaching algorithms and basic programming logic using Scratch and Code.org.",
     date: "2024",
     type: "Teaching",
     image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f",
+    link: "/events/event-details/it-teacher",
   },
 
   {
