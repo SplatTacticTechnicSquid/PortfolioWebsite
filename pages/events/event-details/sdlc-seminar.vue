@@ -2,10 +2,12 @@
   <section class="max-w-5xl mx-auto px-6 py-16 text-white">
     <!-- HEADER -->
     <header class="mb-12 text-center">
-      <h1 class="text-4xl md:text-5xl font-bold mb-4">SDLC Seminar</h1>
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">
+        Secure Software Development SDLC
+      </h1>
       <p class="text-gray-400 max-w-2xl mx-auto">
-        A seminar introducing the Software Development Life Cycle (SDLC), its
-        stages, and real-world implementation in software projects.
+        The following seminar I attended as one of the speaker is to represent
+        about secure software development.
       </p>
     </header>
 
@@ -26,15 +28,15 @@
       </div>
       <div class="bg-white/5 rounded-xl p-5">
         <p class="text-sm text-gray-400">Audience</p>
-        <p class="font-semibold">Students / Beginners</p>
+        <p class="font-semibold">Employees</p>
       </div>
       <div class="bg-white/5 rounded-xl p-5">
         <p class="text-sm text-gray-400">Location</p>
-        <p class="font-semibold">On-site Seminar</p>
+        <p class="font-semibold">Yogyakarta</p>
       </div>
       <div class="bg-white/5 rounded-xl p-5">
         <p class="text-sm text-gray-400">Duration</p>
-        <p class="font-semibold">~2 Hours</p>
+        <p class="font-semibold">Approximate 2 Hours</p>
       </div>
     </section>
 
@@ -56,14 +58,26 @@
 
       <!-- WHAT WAS TAUGHT -->
       <div>
-        <h2 class="text-2xl font-semibold mb-4">What I Taught</h2>
+        <h2 class="text-2xl font-semibold mb-4">
+          As one of the presenter, I explained about
+        </h2>
         <ul class="grid sm:grid-cols-2 gap-4 text-gray-300">
-          <li class="bg-white/5 p-4 rounded-xl">Requirement Analysis</li>
-          <li class="bg-white/5 p-4 rounded-xl">System Design</li>
-          <li class="bg-white/5 p-4 rounded-xl">Implementation</li>
-          <li class="bg-white/5 p-4 rounded-xl">Testing & QA</li>
-          <li class="bg-white/5 p-4 rounded-xl">Deployment</li>
-          <li class="bg-white/5 p-4 rounded-xl">Maintenance</li>
+          <li class="bg-white/5 p-4 rounded-xl text-xl">
+            <span class="font-semibold text-green-400">1 </span>Understanding
+            computer software vulnerabilities
+          </li>
+          <li class="bg-white/5 p-4 rounded-xl text-xl">
+            <span class="font-semibold text-green-400">2 </span>Case study of a
+            CVE
+          </li>
+          <li class="bg-white/5 p-4 rounded-xl text-xl">
+            <span class="font-semibold text-green-400">3 </span>
+            Practical demonstration
+          </li>
+          <li class="bg-white/5 p-4 rounded-xl text-xl">
+            <span class="font-semibold text-green-400">4 </span>Root cause
+            Analysis of CVE-55182
+          </li>
         </ul>
       </div>
 
@@ -87,22 +101,30 @@
       <!-- IMPACT -->
       <div>
         <h2 class="text-2xl font-semibold mb-4">Outcome & Impact</h2>
+        <p class="text-gray-300 leading-relaxed mb-2">
+          One of the notable reason is understanding about computer's memory
+          work in detail and how a software manages their memory in functions
+          and other operations. Notably about buffer overflow. The seminar gave
+          awareness of why pre existing security flaw since the early era of
+          software development is still relevant until modern date.
+        </p>
         <p class="text-gray-300 leading-relaxed">
-          Participants gained a clearer understanding of how software is built
-          in professional environments. Many expressed increased confidence in
-          approaching software projects and understanding team workflows.
+          By understanding how memory addresses are stored in computers, we can
+          assess what practices that can cause such vulnerability that can cause
+          administrative exploit through privilege escalation.
         </p>
       </div>
 
-      <!-- PERSONAL REFLECTION -->
+      <!-- Overview of buffer overflow -->
       <div class="bg-white/5 border border-white/10 rounded-2xl p-6">
-        <h2 class="text-2xl font-semibold mb-4">My Reflection</h2>
-        <p class="text-gray-300 leading-relaxed">
-          Delivering this seminar strengthened my communication skills and
-          reaffirmed my passion for teaching and knowledge sharing. Explaining
-          complex technical concepts in a simple and engaging way was both
-          challenging and rewarding.
+        <h2 class="text-2xl font-semibold mb-4">Overview of Buffer overflow</h2>
+        <p class="text-gray-300 leading-relaxed mb-4">
+          A buffer overflow is a condition when a program tries to write more
+          data into a memory buffer than it was allocated to hold. Meaning that
+          the process writes the data beyond the bounds of a memory region
+          within the computer.
         </p>
+        <p>Learn more about buffer overflow</p>
       </div>
     </section>
   </section>
