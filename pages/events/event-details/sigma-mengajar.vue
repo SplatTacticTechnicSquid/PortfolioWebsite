@@ -17,11 +17,11 @@
     >
       <div class="bg-white/5 rounded-xl p-4 border border-white/10">
         <p class="text-sm text-gray-400">Duration</p>
-        <p class="font-semibold">3 Months</p>
+        <p class="font-semibold">2 days</p>
       </div>
       <div class="bg-white/5 rounded-xl p-4 border border-white/10">
         <p class="text-sm text-gray-400">Location</p>
-        <p class="font-semibold">Indonesia</p>
+        <p class="font-semibold">Pamulang, South Tangerang, Indonesia</p>
       </div>
       <div class="bg-white/5 rounded-xl p-4 border border-white/10">
         <p class="text-sm text-gray-400">Role</p>
@@ -46,10 +46,10 @@
 
       <div class="grid sm:grid-cols-2 gap-6">
         <div class="bg-white/5 rounded-xl p-5 border border-white/10">
-          <h3 class="font-semibold mb-2">📚 Calistung</h3>
+          <h3 class="font-semibold mb-2">📚 Calistung (Read, Write, Count)</h3>
           <p class="text-gray-300 text-sm">
-            Reading, writing, and basic arithmetic such as addition,
-            subtraction, and number recognition.
+            Teaching children on basic reading, writing, and arithmetics such as
+            addition, subtraction, multiplication and divison.
           </p>
         </div>
 
@@ -84,13 +84,13 @@
       <h2 class="text-2xl font-semibold mb-6">Activities & Moments</h2>
 
       <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
-        <img
+        <!-- <img
           v-for="n in 6"
           :key="n"
           :src="`/images/events/sigma-mengajar-${n}.jpg`"
           alt="SIGMA Mengajar activity"
           class="rounded-xl object-cover h-40 w-full bg-gray-700"
-        />
+        /> -->
       </div>
     </section>
 
