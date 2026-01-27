@@ -84,13 +84,13 @@
       <h2 class="text-2xl font-semibold mb-6">Activities & Moments</h2>
 
       <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
-        <img
+        <!-- <img
           v-for="n in 6"
           :key="n"
           :src="`/images/events/sigma-mengajar-${n}.jpg`"
           alt="SIGMA Mengajar activity"
           class="rounded-xl object-cover h-40 w-full bg-gray-700"
-        />
+        /> -->
       </div>
     </section>
 
