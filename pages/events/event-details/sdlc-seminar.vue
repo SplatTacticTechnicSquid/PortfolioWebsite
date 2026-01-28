@@ -124,7 +124,14 @@
           the process writes the data beyond the bounds of a memory region
           within the computer.
         </p>
-        <p>Learn more about buffer overflow</p>
+        <p class="text-gray-300 leading-relaxed mb-8">
+          Learn more about buffer overflow
+        </p>
+        <NuxtLink
+          to="/learning/learning-details/buffer-overflow"
+          class="hover:text-blue-400"
+          >Buffer Overflow</NuxtLink
+        >
       </div>
     </section>
   </section>
