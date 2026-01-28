@@ -14,12 +14,27 @@
       <p class="leading-relaxed mb-2">
         A computer program stores its data in a region of the computer called
         the memory. Each memory has an address where a software can store its
-        variables each with an assigned value. Each of these memory container
-        are called buffers; a placeholder for the values of the program with a
-        fixed size.
+        variables each with an assigned value. Computers store their data
+        temporarily in a physical component known as the Random Access Memory
+        Moreover, the memory container are called buffers. This is a placeholder
+        for the values of the program with a declared size.
+      </p>
+
+      <p class="text-xl italic">Buffers</p>
+      <p class="leading-relaxed mb-2">
+        A computer buffer is used to hold data temporarily while the data is
+        being transferred from one place to another. Computers take advantage of
+        buffers to optimize performance such as caching. For example, hard disk
+        drives are known for their slow performance in accessing data. To combat
+        this issue, computer uses buffers to efficiently access the data by
+        placing it in a memory region temporarily to speed up the access speed
+        rather than having it to read sequentially raw from the hard drive. This
+        technique is used for opening commonly used software. Online videos also
+        use buffer memory when streaming to prevent interruption whenever there
+        is a connection issue.
       </p>
       <p class="leading-relaxed mb-2">
-        However the major problem is with the software, sometimes when handling
+        However the major problem is associated with the software when handling
         with memory assignment. Such programs can misbehave in a way that it
         copies data more than what it is required, this causes a phenomenon
         called the
@@ -61,6 +76,16 @@
       </ul>
     </section>
 
+    <div
+      class="bg-white/5 border border-white/10 rounded-xl p-4 text-gray-300 mb-10"
+    >
+      <section class="mb-10">
+        <h2 class="text-2xl font-semibold mb-3 text-red-600">
+          Damages that can be done with buffer overflow
+        </h2>
+      </section>
+    </div>
+
     <!-- How it happens -->
     <section class="mb-10">
       <h2 class="text-2xl font-semibold mb-3">How Buffer Overflow Happens</h2>
@@ -71,12 +96,28 @@
         memory boundaries are violated.
       </p>
 
+      <NuxtImg
+        src=""
+        class="rounded-2xl mb-12 w-full object-cover"
+        format="webp"
+      />
+
       <div
         class="bg-white/5 border border-white/10 rounded-xl p-4 text-gray-300"
       >
         <p class="mb-2 font-semibold text-white">Common causes include:</p>
-        <ul class="list-disc list-inside space-y-1">
-          <li>Using unsafe functions that do not check input length</li>
+        <ul class="list-disc space-y-2 ml-6">
+          <li>
+            Using unsafe functions that do not check input length
+            <ul class="list-[circle] ml-6 mt-1 space-y-1">
+              <li>
+                e.g. in C programming language there is a strcpy() function
+                where a user can copy a value from one variable to another
+                without bound checking
+              </li>
+            </ul>
+          </li>
+
           <li>Improper memory allocation</li>
           <li>Lack of bounds checking</li>
           <li>Trusting external or user-controlled input</li>
