@@ -97,7 +97,7 @@
       </p>
 
       <NuxtImg
-        src=""
+        src="images/articles/buffer-overflow/var1var2bufovflow.png"
         class="rounded-2xl mb-12 w-full object-cover"
         format="webp"
       />
