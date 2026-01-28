@@ -23,21 +23,24 @@
         with memory assignment. Such programs can misbehave in a way that it
         copies data more than what it is required, this causes a phenomenon
         called the
-        <strong class="font-semibold text-red-400">buffer overflow</strong>
+        <strong class="font-semibold text-green-500">buffer overflow</strong>
       </p>
       <p class="leading-relaxed">
-        <strong>buffer overflow</strong> is an event when a computer program
-        writes more data into a memory container called a buffer A
-        <strong>buffer overflow</strong> occurs when a program writes more data
-        to a memory buffer than it was designed to hold. This extra data can
-        overwrite adjacent memory, potentially altering program behavior,
-        causing crashes, or enabling attackers to execute malicious code.
+        <strong class="font-semibold text-green-500">Buffer overflow</strong> is
+        an event when a computer program writes more data into a memory
+        container called a buffer A <strong>buffer overflow</strong> occurs when
+        a program writes more data to a memory buffer than it was designed to
+        hold. This extra data can overwrite adjacent memory, potentially
+        altering program behavior, causing crashes, or enabling attackers to
+        execute malicious code.
       </p>
     </section>
 
     <!-- Why it matters -->
     <section class="mb-10">
-      <h2 class="text-2xl font-semibold mb-3">Why Buffer Overflow Matters</h2>
+      <h2 class="text-2xl font-semibold mb-3">
+        Why addressing Buffer Overflow is still crucial?
+      </h2>
 
       <ul class="list-disc list-inside text-gray-300 space-y-2">
         <li>
@@ -46,10 +49,15 @@
         </li>
         <li>Common in low-level languages like <strong>C and C++</strong></li>
         <li>
-          Can lead to <strong>system compromise</strong>, data leakage, or
-          privilege escalation
+          The exploit leads to
+          <strong>system compromise, data leak, or privilege escalation</strong>
         </li>
         <li>Often exploited when input validation is weak or absent</li>
+        <li>
+          Buffer overflow exploit is still present in modern hardware and
+          programs such as websites, IoT devices, smartwatches, security cameras
+          and consumer electronics
+        </li>
       </ul>
     </section>
 
@@ -131,11 +139,16 @@
 
     <!-- Closing -->
     <section>
-      <p class="text-gray-400 italic">
+      <p class="text-gray-400 italic mb-12">
         Understanding buffer overflow vulnerabilities is essential for building
         secure software systems. Awareness, secure coding, and proper testing
         significantly reduce the risk of exploitation.
       </p>
+    </section>
+
+    <!-- References -->
+    <section>
+      <h2 class="font-bold text-2xl">References</h2>
     </section>
   </div>
 </template>
