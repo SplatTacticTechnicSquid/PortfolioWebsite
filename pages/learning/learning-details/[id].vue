@@ -1,68 +1,41 @@
 <template>
-  <article v-if="article" class="max-w-4xl mx-auto px-6 py-16">
-    <header class="mb-12">
-      <h1 class="text-4xl md:text-5xl font-bold mb-4">
-        {{ article.title }}
-      </h1>
-
-      <p class="text-gray-400 max-w-2xl">
-        {{ article.description }}
-      </p>
-
-      <div class="flex gap-4 mt-6 text-sm text-gray-400">
-        <span>📘 {{ article.category }}</span>
-        <span>⚙️ {{ article.level }}</span>
-        <span>🗓 {{ article.date }}</span>
-      </div>
-    </header>
-
-    <NuxtImg
-      v-if="article.image"
-      :src="article.image"
-      class="rounded-2xl mb-12 w-full object-cover"
-      loading="lazy"
-      provider="static"
-    />
-
-    <section class="prose prose-invert max-w-none">
-      <component :is="article.component" />
-    </section>
-  </article>
-
-  <!-- Optional fallback -->
-  <div v-else class="text-center py-32 text-gray-400">Article not found.</div>
+  <div class="p-10">
+    <Transition name="fade" mode="out-in">
+      <component :is="LearningComponent" :key="route.params.id" />
+    </Transition>
+  </div>
 </template>
 
 <script setup>
 import { defineAsyncComponent, computed } from "vue";
 import { useRoute } from "vue-router";
+import LearningNotFound from "../learning-not-found.vue";
 
 const route = useRoute();
+const articleId = route.params.id;
 
-const articles = {
-  "buffer-overflow": {
-    title: "Understanding Buffer Overflow",
-    description:
-      // "Learn how buffer overflow works, how it affects memory, and why it is dangerous.",
-      "Learn what is buffer overflow, how computer memory works and why it can cause security issues",
-    category: "Security",
-    level: "Beginner - Intermediate",
-    date: "2025",
-    image: "/images/articles/buffer-overflow/bufovflowterminal.png",
-    component: defineAsyncComponent(() => import("./buffer-overflow.vue")),
-  },
-
-  "blockchain-basics": {
-    title: "Blockchain Fundamentals",
-    description:
-      "An introduction to wallets, tokens, NFTs, and smart contracts in Cardano.",
-    category: "Blockchain",
-    level: "Beginner",
-    date: "2024",
-    image: "/images/learning/blockchain.jpg",
-    // component: defineAsyncComponent(() => import("./blockchain-basics.vue")),
-  },
+const learningComponents = {
+  "buffer-overflow": defineAsyncComponent(
+    () => import("./buffer-overflow.vue"),
+  ),
+  // "blockchain-basics": defineAsyncComponent(
+  //   () => import("./blockchain-basics.vue"),
+  // ),
+  // add more articles here
 };
 
-const article = computed(() => articles[route.params.id]);
+const LearningComponent = computed(
+  () => learningComponents[articleId] || LearningNotFound,
+);
 </script>
+
+<style scoped>
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease-in-out;
+}
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+</style>

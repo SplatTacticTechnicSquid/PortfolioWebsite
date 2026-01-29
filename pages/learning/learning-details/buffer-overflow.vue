@@ -11,16 +11,46 @@
 
     <!-- Intro -->
     <section class="mb-10">
-      <p class="leading-relaxed mb-2">
+      <NuxtImg
+        src="images/articles/buffer-overflow/bufovflowterminal.png"
+        class="rounded-2xl mb-12 w-full object-cover"
+        format="webp"
+      />
+
+      <figure class="float-right ml-6 mb-4 w-48 text-center">
+        <NuxtImg
+          src="images/articles/buffer-overflow/ram-stick.png"
+          class="rounded-xl"
+          format="webp"
+          alt="RAM sticks"
+        />
+        <figcaption class="mt-2 text-xs text-gray-500">
+          RAM stick component used as system memory
+        </figcaption>
+      </figure>
+
+      <p class="leading-relaxed mb-4">
         A computer program stores its data in a region of the computer called
-        the memory. Each memory has an address where a software can store its
-        variables each with an assigned value. Computers store their data
-        temporarily in a physical component known as the Random Access Memory
-        Moreover, the memory container are called buffers. This is a placeholder
-        for the values of the program with a declared size.
+        memory. Each memory location has an address where software can store
+        variables, each with an assigned value. Computers store their data
+        temporarily in a physical component known as Random Access Memory (RAM).
+        Moreover, the memory containers are called buffers. Buffers act as
+        placeholders for program values with a declared size.
       </p>
 
+      <figure class="float-left mr-6 mb-4 w-48 text-center">
+        <NuxtImg
+          src="images/articles/buffer-overflow/buffer.png"
+          class="rounded-xl"
+          format="webp"
+          alt="buffer memory"
+        />
+        <figcaption class="mt-2 text-xs text-gray-500">
+          simple illustration of computer temporary buffer storage
+        </figcaption>
+      </figure>
       <p class="text-xl italic">Buffers</p>
+
       <p class="leading-relaxed mb-2">
         A computer buffer is used to hold data temporarily while the data is
         being transferred from one place to another. Computers take advantage of
@@ -76,16 +106,17 @@
       </ul>
     </section>
 
-    <div
-      class="bg-white/5 border border-white/10 rounded-xl p-4 text-gray-300 mb-10"
-    >
+    <div class="bg-white/5 border border-white/10 rounded-xl p-4 mb-10">
       <section class="mb-10">
-        <h2 class="text-2xl font-semibold mb-3 text-red-600">
+        <h2 class="text-2xl font-bold mb-3 text-red-600">
           Damages that can be done with buffer overflow
         </h2>
 
         <div class="mb-4">
-          <h3 class="text-xl mb-2">Privilege Escalation</h3>
+          <h3 class="inline-flex items-center gap-2 text-xl mb-2 font-semibold">
+            <Icon name="clarity:administrator-line" class="text-4xl" />
+            Privilege Escalation
+          </h3>
           <p class="leading-relaxed">
             In system account, a user will have certain level of privileges of
             what they can do. This includes modifying the system settings,
@@ -105,7 +136,9 @@
         </div>
 
         <div class="mb-4">
-          <h3 class="text-xl mb-2">Code Execution</h3>
+          <h3 class="inline-flex items-center gap-2 text-xl mb-2">
+            <Icon name="ph:file-code" class="text-4xl" />Code Execution
+          </h3>
           <p class="leading-relaxed">
             Buffer overflows can lead to arbitrary code execution by allowing an
             attacker to overwrite adjacent memory when more data is written to a
@@ -121,7 +154,9 @@
         </div>
 
         <div class="mb-4">
-          <h3 class="text-xl mb-2">Data Corruption</h3>
+          <h3 class="inline-flex items-center gap-2 text-xl mb-2">
+            <Icon name="subway:file-6" class="text-4xl" />Data Corruption
+          </h3>
           <p class="leading-relaxed">
             Common impact of buffer overflow is data corruption. This occurs
             when a program writes more data to a buffer than it can hold,
@@ -154,15 +189,16 @@
         format="webp"
       />
 
-      <h3 class="text-xl">The phenomenon, how it occurs</h3>
+      <h3 class="text-xl mb-4 font-semibold">What happens here</h3>
       <p class="mb-2">
         The diagram above illustrates how a buffer overflow happens when a
         program copies more data into a memory buffer than it was designed to
-        hold. In this example, Variable 1 has a buffer size of 10 bytes, which
-        is enough to store the string "HELLOWORLD". Each character occupies one
-        byte, and the buffer indices range from 0 to 9. Variable 2, however, has
-        a smaller buffer size of only 8 bytes. This means it can safely store
-        only the first eight characters of the string.
+        hold. In this example, <b>Variable 1</b> has a buffer size of
+        <b>10 bytes</b>, which is enough to store the string "HELLOWORLD". Each
+        character occupies one byte, and the buffer indices range from 0 to 9.
+        However, <b>Variable 2</b> has a smaller buffer size of only
+        <b>8 bytes</b>. This means it can safely store only the
+        <i>first eight characters of the string</i>.
       </p>
 
       <p class="mb-2">
@@ -270,9 +306,9 @@
     </section>
 
     <!-- References -->
-    <section>
+    <!-- <section>
       <h2 class="font-bold text-2xl">References</h2>
-    </section>
+    </section> -->
   </div>
 </template>
 
