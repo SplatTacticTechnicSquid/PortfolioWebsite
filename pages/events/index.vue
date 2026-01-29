@@ -53,7 +53,7 @@ const events = [
     description:
       "Teaching volunteer Corporate Social Responsibility program empowering to educate children in need",
     date: "2025",
-    type: "Workshop",
+    type: "Volunteering",
     image: "/images/events/sigmamengajar.png",
     link: "/events/event-details/sigma-mengajar",
   },
