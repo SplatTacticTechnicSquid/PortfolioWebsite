@@ -1,5 +1,5 @@
 <template>
-  <article class="max-w-4xl mx-auto px-6 py-16">
+  <article v-if="article" class="max-w-4xl mx-auto px-6 py-16">
     <header class="mb-12">
       <h1 class="text-4xl md:text-5xl font-bold mb-4">
         {{ article.title }}
@@ -20,14 +20,17 @@
       v-if="article.image"
       :src="article.image"
       class="rounded-2xl mb-12 w-full object-cover"
-      format="webp"
       loading="lazy"
+      provider="static"
     />
 
     <section class="prose prose-invert max-w-none">
       <component :is="article.component" />
     </section>
   </article>
+
+  <!-- Optional fallback -->
+  <div v-else class="text-center py-32 text-gray-400">Article not found.</div>
 </template>
 
 <script setup>
