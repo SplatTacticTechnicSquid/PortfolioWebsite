@@ -43,9 +43,9 @@ const articles = {
       // "Learn how buffer overflow works, how it affects memory, and why it is dangerous.",
       "Learn what is buffer overflow, how computer memory works and why it can cause security issues",
     category: "Security",
-    level: "Intermediate",
-    date: "2024",
-    image: "/images/learning/buffer-overflow.jpg",
+    level: "Beginner - Intermediate",
+    date: "2025",
+    image: "/images/articles/buffer-overflow/bufovflowterminal.png",
     component: defineAsyncComponent(() => import("./buffer-overflow.vue")),
   },
 
