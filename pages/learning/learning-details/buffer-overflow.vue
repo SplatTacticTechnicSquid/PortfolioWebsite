@@ -83,6 +83,58 @@
         <h2 class="text-2xl font-semibold mb-3 text-red-600">
           Damages that can be done with buffer overflow
         </h2>
+
+        <div class="mb-4">
+          <h3 class="text-xl mb-2">Privilege Escalation</h3>
+          <p class="leading-relaxed">
+            In system account, a user will have certain level of privileges of
+            what they can do. This includes modifying the system settings,
+            services and installing applications. Now privilege escalation is a
+            term where a user is granted a root or administrator access to a
+            system. Buffer overflow can overwrite adjacent memory regions that
+            are not allowed to be accessed by a program and it is reserved for
+            the system or high level processes.
+          </p>
+          <p class="leading-relaxed">
+            Attackers can use this tactic to trick the operating system thinking
+            that the application is running as administrator as it is accessing
+            a forbidden memory space that is reserved for root or admin access
+            only. Therefore the operating system accidentally provides the
+            attacker with highest privileges to perform their instruction
+          </p>
+        </div>
+
+        <div class="mb-4">
+          <h3 class="text-xl mb-2">Code Execution</h3>
+          <p class="leading-relaxed">
+            Buffer overflows can lead to arbitrary code execution by allowing an
+            attacker to overwrite adjacent memory when more data is written to a
+            buffer than it can hold. If this overflow reaches control data such
+            as a return address, the attacker can modify it. A return address is
+            a memory location that tells the program where to continue execution
+            after a function finishes. By overwriting the return address, the
+            attacker can redirect the program's execution flow to a location of
+            their choosing. As a result, the CPU executes attacker-controlled
+            instructions with the same privileges as the vulnerable program,
+            which can lead to serious security compromises.
+          </p>
+        </div>
+
+        <div class="mb-4">
+          <h3 class="text-xl mb-2">Data Corruption</h3>
+          <p class="leading-relaxed">
+            Common impact of buffer overflow is data corruption. This occurs
+            when a program writes more data to a buffer than it can hold,
+            causing the excess data to overwrite adjacent memory locations that
+            store important program data.
+          </p>
+          <p class="leading-relaxed">
+            By overriding other programs' data, the variable values can be
+            assigned wrongly or modified in a point where the software can be
+            rendered useless or doing unintended operations that can crash the
+            computer instead.
+          </p>
+        </div>
       </section>
     </div>
 
@@ -101,6 +153,36 @@
         class="rounded-2xl mb-12 w-full object-cover"
         format="webp"
       />
+
+      <h3 class="text-xl">The phenomenon, how it occurs</h3>
+      <p class="mb-2">
+        The diagram above illustrates how a buffer overflow happens when a
+        program copies more data into a memory buffer than it was designed to
+        hold. In this example, Variable 1 has a buffer size of 10 bytes, which
+        is enough to store the string "HELLOWORLD". Each character occupies one
+        byte, and the buffer indices range from 0 to 9. Variable 2, however, has
+        a smaller buffer size of only 8 bytes. This means it can safely store
+        only the first eight characters of the string.
+      </p>
+
+      <p class="mb-2">
+        When the function strcpy(variable1, variable2) is used, it blindly
+        copies data from Variable 1 into Variable 2 without checking the
+        destination buffer size. As a result, the characters 'L' and 'D' exceed
+        Variable 2’s allocated memory and spill into adjacent memory locations,
+        shown as the highlighted overflow region in the diagram. This excess
+        data overwrites whatever happens to be stored immediately after Variable
+        2 in memory.
+      </p>
+
+      <p class="mb-2">
+        That data could belong to another variable, a control value, or internal
+        program state. This unintended overwrite is what constitutes a buffer
+        overflow. The key issue is that functions like strcpy assume the
+        destination buffer is large enough. When that assumption is false, the
+        program writes beyond its intended boundaries, leading to data
+        corruption, crashes, or in severe cases, security vulnerabilities.
+      </p>
 
       <div
         class="bg-white/5 border border-white/10 rounded-xl p-4 text-gray-300"
