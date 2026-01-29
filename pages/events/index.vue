@@ -53,7 +53,7 @@ const events = [
     description:
       "Teaching volunteer Corporate Social Responsibility program empowering to educate children in need",
     date: "2025",
-    type: "Workshop",
+    type: "Volunteering",
     image: "/images/events/sigmamengajar.png",
     link: "/events/event-details/sigma-mengajar",
   },
@@ -64,7 +64,7 @@ const events = [
     description: "Practical Approach to software vulnerability",
     date: "2025",
     type: "Workshop",
-    image: "/images/events/SDLC.jpeg",
+    image: "/images/events/SDLC/SDLC.jpeg",
     link: "/events/event-details/sdlc-seminar",
   },
 
