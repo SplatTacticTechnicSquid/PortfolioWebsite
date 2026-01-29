@@ -64,7 +64,7 @@ const events = [
     description: "Practical Approach to software vulnerability",
     date: "2025",
     type: "Workshop",
-    image: "/images/events/SDLC.jpeg",
+    image: "/images/events/SDLC/SDLC.jpeg",
     link: "/events/event-details/sdlc-seminar",
   },
 
