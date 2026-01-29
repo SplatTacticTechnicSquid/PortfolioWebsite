@@ -14,7 +14,7 @@
     <!-- HERO IMAGE -->
     <div class="mb-16 rounded-2xl overflow-hidden border border-white/10">
       <img
-        src=""
+        src="/images/events/SDLC/SDLC2.jpeg"
         alt="SDLC Seminar"
         class="w-full h-[240px] sm:h-[360px] object-cover"
       />
