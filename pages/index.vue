@@ -26,7 +26,7 @@
             class="flex flex-wrap justify-center md:justify-start gap-4 mt-6"
           >
             <NuxtLink
-              to="https://drive.google.com/file/d/1ccLY2tCc15WVbjFE1n052LZXc70F1N1w/view?usp=sharing"
+              to="https://drive.google.com/file/d/1GV-H3wG5kZ36h0fJQbl6d9RptaG9jzD-/view?usp=sharing"
               download
               class="bg-green-500 hover:bg-green-600 px-6 py-3 rounded-lg font-semibold"
               target="_blank"
