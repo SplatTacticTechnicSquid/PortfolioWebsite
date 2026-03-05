@@ -43,6 +43,11 @@
             >Activity & Volunteering</NuxtLink
           >
         </div>
+        <div>
+          <NuxtLink to="/learning" class="hover:text-blue-400"
+            >Learning</NuxtLink
+          >
+        </div>
       </div>
     </div>
 
