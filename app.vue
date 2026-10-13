@@ -1,42 +1,22 @@
 <template>
-  <div class="min-h-screen bg-gray-900 text-white">
+  <div class="site-shell">
+    <a class="skip-link" href="#main-content">Skip to content</a>
     <Navbar />
-
-    <NuxtLayout>
-      <NuxtPage />
-    </NuxtLayout>
-
+    <NuxtLayout><NuxtPage /></NuxtLayout>
     <Footer />
   </div>
 </template>
 
 <script setup lang="ts">
-import Navbar from "@/components/Navbar.vue";
-import Footer from "@/components/Footer.vue";
-
-// seo optimization for app.vue main
 useHead({
-  titleTemplate: (title) =>
-    title ? `${title} | Raditya Pratama` : "Raditya Pratama's Portfolio",
-  meta: [
-    {
-      name: "Professional Portfolio created by Raditya",
-      content: "Talent showcases and experience from my journey",
-    },
-  ],
-
-  script: [{ innerHTML: "console.log('Hello I am Raditya')" }],
+  htmlAttrs: { lang: 'en' },
+  titleTemplate: (title) => title ? title + ' — Raditya Pratama' : 'Raditya Pratama — Developer & Engineer',
+  meta: [{ name: 'theme-color', content: '#f4f3ed' }],
+  link: [{ rel: 'icon', type: 'image/svg+xml', href: useRuntimeConfig().app.baseURL + 'favicon.svg' }],
+});
+useSeoMeta({
+  description: 'Raditya Rifqi Pratama builds enterprise applications, AI-enabled interfaces, and engineering tools. Explore digital transformation work at LG Electronics and Telkomsigma.',
+  ogSiteName: 'Raditya Pratama',
+  ogType: 'website',
 });
 </script>
-
-<style>
-.page-enter-active,
-.page-leave-active {
-  transition: all 0.4s;
-}
-.page-enter-from,
-.page-leave-to {
-  opacity: 0;
-  filter: blur(1rem);
-}
-</style>
