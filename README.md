@@ -1,6 +1,6 @@
 # Raditya Pratama — Portfolio
 
-A Nuxt 3 portfolio for digital transformation, enterprise applications, AI-enabled interfaces, and hardware integration. The redesign uses the supplied CV as its content source.
+A Nuxt 3 personal portfolio for digital transformation, enterprise applications, AI-enabled interfaces, and hardware integration. The content is based on the supplied CV. The raditya-dev3 design restores the original dark background, green accents, and terminal-inspired identity, with a recruiter-focused overview of projects, experience, skills, and education.
 
 ## Run locally
 
@@ -26,13 +26,12 @@ For deployment under a repository subpath, set `NUXT_APP_BASE_URL` (for example,
 ## Content and structure
 
 - `data/portfolio.ts` — profile, projects, experience, education, certifications, skills, languages, community activities, and awards.
-- `pages/index.vue` — introduction, selected projects, impact highlight, and experience preview.
+- `pages/index.vue` — personal introduction, CV download, four featured projects, experience, skills, and credentials.
 - `pages/projects/index.vue` — filterable project collection.
 - `pages/projects/project_details/[id].vue` — shared case study template.
 - `pages/about.vue` — full professional background.
 - `pages/contact.vue` — email, copy-email interaction, GitHub, and CV.
 - `components/ProjectVisual.vue` — original conceptual workflow illustrations.
-- `components/EngineeringVisual.vue` — homepage systems illustration.
 - `assets/css/main.css` — shared design tokens, typography, controls, and motion preferences.
 - `public/files/Raditya-Pratama-CV.pdf` — downloadable CV generated from the supplied material.
 
@@ -42,7 +41,7 @@ Project visuals are conceptual illustrations, not internal application screensho
 
 ## Deployment
 
-The GitHub Pages workflow in `.github/workflows/nuxtjs.yml` installs locked dependencies, generates the site with the Pages base path, and publishes `.output/public`. It runs on pushes to `main` or a manual workflow dispatch. Work on `raditya-dev2` stays local until explicitly committed/pushed and merged or deployed.
+The GitHub Pages workflow in `.github/workflows/nuxtjs.yml` installs locked dependencies, generates the site with the Pages base path, and publishes `.output/public`. It runs on pushes to `main` or a manual workflow dispatch. The previous redesign is preserved on `raditya-dev2`; this version is developed on `raditya-dev3`. Neither branch is automatically deployed by a branch push.
 
 There is no backend service, database, contact submission endpoint, tracking script, or external font dependency. Email links open the visitor’s email application.
 
