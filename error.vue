@@ -19,7 +19,7 @@ useHead({ title: 'Page unavailable — Raditya Pratama', meta: [{ name: 'robots'
 <style scoped>
 .error-page { min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 40px 24px; }
 .error-brand { font-weight: 700; letter-spacing: -.5px; margin-bottom: 60px; }
-.error-code { font: italic clamp(100px, 20vw, 180px)/1 Georgia, serif; letter-spacing: -.08em; color: var(--green); margin: 0 0 24px; }
+.error-code { font: 700 clamp(100px, 20vw, 180px)/1 var(--font-mono); letter-spacing: -.08em; color: var(--green); margin: 0 0 24px; }
 h1 { font-size: clamp(26px, 4vw, 40px); font-weight: 500; letter-spacing: -.04em; line-height: 1.2; }
 h1 + p { color: var(--muted); max-width: 470px; margin: 18px 0 28px; }
 </style>
