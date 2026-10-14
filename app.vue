@@ -1,5 +1,6 @@
 <template>
   <div class="site-shell">
+    <CursorGlow />
     <a class="skip-link" href="#main-content">Skip to content</a>
     <Navbar />
     <NuxtLayout><NuxtPage /></NuxtLayout>
@@ -11,7 +12,7 @@
 useHead({
   htmlAttrs: { lang: 'en' },
   titleTemplate: (title) => title ? title + ' — Raditya Pratama' : 'Raditya Pratama — Developer & Engineer',
-  meta: [{ name: 'theme-color', content: '#f4f3ed' }],
+  meta: [{ name: 'theme-color', content: '#080f1a' }],
   link: [{ rel: 'icon', type: 'image/svg+xml', href: useRuntimeConfig().app.baseURL + 'favicon.svg' }],
 });
 useSeoMeta({
