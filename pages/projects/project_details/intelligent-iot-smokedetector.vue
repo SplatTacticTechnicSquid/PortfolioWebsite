@@ -5,15 +5,20 @@ useSeoMeta({ title: 'Intelligent IoT Smoke Detector', description: 'An ESP32-bas
 <template>
   <article class="site-container legacy-project">
     <NuxtLink to="/projects" class="button-link">← All projects</NuxtLink>
-    <p class="eyebrow">FROM THE ARCHIVE / EARLIER WORK</p>
+    <p class="eyebrow">PERSONAL PROJECT / EARLIER WORK</p>
     <h1>Intelligent IoT Smoke Detector</h1>
     <p class="legacy-summary">An ESP32-based sensing system that brings temperature, light, and gas-concentration readings into a Blynk IoT dashboard through wireless communication.</p>
     <div class="legacy-tools"><span class="tag">ESP32</span><span class="tag">Blynk IoT</span><span class="tag">Sensor integration</span></div>
-    <p class="legacy-note">An earlier project from my portfolio. Explore my recent work in engineering automation, AI applications, and enterprise software.</p>
-    <NuxtLink to="/projects" class="button button-primary">Explore recent projects <span aria-hidden="true">↗</span></NuxtLink>
+    <p class="legacy-note">See my current work in engineering automation, AI applications, and enterprise software at LG Electronics R&D and TelkomSigma.</p>
+    <NuxtLink to="/projects" class="button button-primary">View current projects <span aria-hidden="true">↗</span></NuxtLink>
   </article>
 </template>
 
 <style scoped>
-.legacy-project { padding-top: 55px; padding-bottom: 90px; min-height: 70vh; }.legacy-project > .eyebrow { margin-top: 60px; }.legacy-project h1 { max-width: 850px; margin: 20px 0; font-size: clamp(2.6rem, 5vw, 4.5rem); line-height: 1.06; letter-spacing: -.055em; font-weight: 500; }.legacy-summary { max-width: 690px; font-size: 18px; line-height: 1.8; color: var(--muted); }.legacy-tools { display: flex; flex-wrap: wrap; gap: 8px; margin: 27px 0 45px; }.legacy-note { max-width: 590px; color: var(--muted); font-size: 14px; line-height: 1.8; margin-bottom: 24px; }
+.legacy-project { padding-top: 35px; padding-bottom: 64px; min-height: 70vh; }
+.legacy-project > .eyebrow { margin-top: 38px; color: var(--green); }
+.legacy-project h1 { max-width: 850px; margin: 17px 0; font-size: clamp(2.2rem, 4.5vw, 3.8rem); line-height: 1.12; letter-spacing: -.04em; font-weight: 700; }
+.legacy-summary { max-width: 690px; font-size: 16px; line-height: 1.8; color: var(--muted); }
+.legacy-tools { display: flex; flex-wrap: wrap; gap: 8px; margin: 23px 0 30px; }
+.legacy-note { max-width: 690px; padding: 22px; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); color: var(--muted); font-size: 13px; line-height: 1.8; margin-bottom: 24px; }
 </style>
