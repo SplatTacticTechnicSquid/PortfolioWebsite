@@ -1,4 +1,4 @@
-﻿<script setup lang="ts">
+<script setup lang="ts">
 import { profile, experiences, education, certifications, skillGroups, languages, activities, awards } from '~/data/portfolio'
 
 useSeoMeta({
@@ -95,6 +95,7 @@ const cvUrl = useRuntimeConfig().app.baseURL.replace(/\/$/, '') + profile.cvUrl
 
     <section id="beyond-work" class="about-section community-section" aria-labelledby="community-heading">
       <div class="section-header"><div><p class="eyebrow">05 / Community</p><h2 id="community-heading" class="section-heading">Leadership &amp; activities.</h2></div><p>Teaching, volunteering, and research beyond my day-to-day role.</p></div>
+      <CommunityGallery />
       <div class="activity-list">
         <details v-for="activity in activities" :key="activity.organization + activity.role" class="activity-item">
           <summary><span class="activity-organization">{{ activity.organization }}</span><span class="activity-role">{{ activity.role }}</span><span class="activity-toggle" aria-hidden="true">+</span></summary>
