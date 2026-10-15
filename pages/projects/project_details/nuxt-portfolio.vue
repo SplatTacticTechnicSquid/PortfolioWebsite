@@ -1,30 +1,24 @@
+<script setup lang="ts">
+useSeoMeta({ title: 'Personal Portfolio', description: 'A personal portfolio built with Nuxt and Vue, bringing together my work in software, instrumentation, and digital transformation.' })
+</script>
+
 <template>
-  <div class="p-10 text-center">
-    <h2 class="text-4xl font-bold text-white">Nuxt Portfolio</h2>
-    <p class="text-gray-300 mt-4">
-      A fast Nuxt 3 portfolio built with Tailwind CSS.
-    </p>
-
-    <div class="mt-6 space-x-4">
-      <a
-        href="https://github.com/yourusername/nuxt-portfolio"
-        target="_blank"
-        class="text-blue-400 hover:underline"
-        >GitHub</a
-      >
-      <a
-        href="https://your-portfolio-demo.com"
-        target="_blank"
-        class="text-blue-400 hover:underline"
-        >Live Demo</a
-      >
-    </div>
-
-    <NuxtLink
-      to="/projects"
-      class="mt-6 inline-block text-blue-400 hover:underline"
-    >
-      Back to Projects
-    </NuxtLink>
-  </div>
+  <article class="site-container legacy-project">
+    <NuxtLink to="/projects" class="button-link">← All projects</NuxtLink>
+    <p class="eyebrow">PERSONAL PROJECT / EARLIER WORK</p>
+    <h1>Personal Portfolio</h1>
+    <p class="legacy-summary">A personal portfolio built with Nuxt and Vue, bringing together my work in software, instrumentation, and digital transformation.</p>
+    <div class="legacy-tools"><span class="tag">Nuxt</span><span class="tag">Vue</span><span class="tag">TypeScript</span></div>
+    <p class="legacy-note">See my current work in engineering automation, AI applications, and enterprise software at LG Electronics R&D and TelkomSigma.</p>
+    <NuxtLink to="/projects" class="button button-primary">View current projects <span aria-hidden="true">↗</span></NuxtLink>
+  </article>
 </template>
+
+<style scoped>
+.legacy-project { padding-top: 35px; padding-bottom: 64px; min-height: 70vh; }
+.legacy-project > .eyebrow { margin-top: 38px; color: var(--green); }
+.legacy-project h1 { max-width: 850px; margin: 17px 0; font-size: clamp(2.2rem, 4.5vw, 3.8rem); line-height: 1.12; letter-spacing: -.04em; font-weight: 700; }
+.legacy-summary { max-width: 690px; font-size: 16px; line-height: 1.8; color: var(--muted); }
+.legacy-tools { display: flex; flex-wrap: wrap; gap: 8px; margin: 23px 0 30px; }
+.legacy-note { max-width: 690px; padding: 22px; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); color: var(--muted); font-size: 13px; line-height: 1.8; margin-bottom: 24px; }
+</style>

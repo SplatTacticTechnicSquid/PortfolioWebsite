@@ -1,75 +1,50 @@
-# Nuxt Minimal Starter
+# Raditya Pratama — Portfolio
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+A Nuxt 3 personal portfolio for digital transformation, enterprise applications, AI-enabled interfaces, and hardware integration. The content is based on the supplied CV. The raditya-dev3 design restores the original dark background, green accents, and terminal-inspired identity, with a recruiter-focused overview of projects, experience, skills, and education.
 
-## Setup
+## Run locally
 
-Make sure to install dependencies:
+Use Node.js 24 (verified with 24.21.0) and npm.
 
-```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
+```sh
+npm ci
 npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
-## Production
+The development site is served at http://localhost:3000. If NVM reports no active Node version, select an installed version first, for example `nvm use 24.21.0`.
 
-Build the application for production:
+## Build
 
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
+```sh
+npm run generate
 ```
 
-Locally preview production build:
+The static site is written to `.output/public`. It includes the homepage, About, Contact, eight CV project case studies, legacy project summaries, and the downloadable PDF. `npm run build` creates a server build when needed.
 
-```bash
-# npm
-npm run preview
+For deployment under a repository subpath, set `NUXT_APP_BASE_URL` (for example, `/Portfolio/`) before generating. Navigation, favicon, and CV download URLs respect this base path.
 
-# pnpm
-pnpm preview
+## Content and structure
 
-# yarn
-yarn preview
+- `data/portfolio.ts` — profile, projects, experience, education, certifications, skills, languages, community activities, and awards.
+- `pages/index.vue` — personal introduction, CV download, four featured projects, experience, skills, and credentials.
+- `pages/projects/index.vue` — filterable project collection.
+- `pages/projects/project_details/[id].vue` — shared case study template.
+- `pages/about.vue` — full professional background.
+- `pages/contact.vue` — email, copy-email interaction, GitHub, and CV.
+- `components/ProjectVisual.vue` — original conceptual workflow illustrations.
+- `assets/css/main.css` — shared design tokens, typography, controls, and motion preferences.
+- `public/files/Raditya-Pratama-CV.pdf` — downloadable CV generated from the supplied material.
 
-# bun
-bun run preview
-```
+Edit the central data file to update portfolio content. Replace the PDF separately when the CV changes. Set `profile.linkedin` only when a verified profile URL is available. The email address and GitHub URL come from the existing portfolio.
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Project visuals are conceptual illustrations, not internal application screenshots. Corporate projects do not link to invented public repositories or live demos. Earlier personal-project URLs remain available as concise archived summaries.
+
+## Deployment
+
+The GitHub Pages workflow in `.github/workflows/nuxtjs.yml` installs locked dependencies, generates the site with the Pages base path, and publishes `.output/public`. It runs on pushes to `main` or a manual workflow dispatch. The previous redesign is preserved on `raditya-dev2`; this version is developed on `raditya-dev3`. Neither branch is automatically deployed by a branch push.
+
+There is no backend service, database, contact submission endpoint, tracking script, or external font dependency. Email links open the visitor’s email application.
+
+## Validation
+
+Production static generation verifies every page can render. The redesign was also checked for internal link targets, downloadable PDF integrity, and HTTP error handling. Runtime and browser checks should be repeated when changing routes or interactions.

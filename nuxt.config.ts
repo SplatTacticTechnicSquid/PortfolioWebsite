@@ -3,6 +3,7 @@ import { defineNuxtConfig } from "nuxt/config";
 import { fileURLToPath } from "url";
 import { dirname, resolve } from "path";
 import tailwindcss from "@tailwindcss/vite";
+import { projects } from "./data/portfolio";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
@@ -14,13 +15,19 @@ export default defineNuxtConfig({
       ],
     },
     pageTransition: { name: "page", mode: "out-in" },
-    layoutTransition: { name: "slide", mode: "out-in" },
   },
 
   compatibilityDate: "2024-11-01",
-  devtools: { enabled: true },
+  devtools: { enabled: false },
+  telemetry: false,
 
   modules: ["@nuxt/icon", "@nuxt/image"],
+
+  nitro: {
+    prerender: {
+      routes: ["/", "/about", "/contact", "/projects", ...projects.map(project => `/projects/project_details/${project.id}`)],
+    },
+  },
 
   vite: {
     plugins: [tailwindcss()],
