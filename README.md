@@ -41,7 +41,11 @@ Project visuals are conceptual illustrations, not internal application screensho
 
 ## Deployment
 
-The GitHub Pages workflow in `.github/workflows/nuxtjs.yml` installs locked dependencies, generates the site with the Pages base path, and publishes `.output/public`. It runs on pushes to `main` or a manual workflow dispatch. The previous redesign is preserved on `raditya-dev2`; this version is developed on `raditya-dev3`. Neither branch is automatically deployed by a branch push.
+Vercel project `portfolio-website` deploys the `main` branch of `SplatTacticTechnicSquid/PortfolioWebsite` to the existing production domain. Push or merge into that repository's `main` branch to trigger a production deployment. Other connected branches can create preview deployments.
+
+Use the Nuxt framework preset, Node.js 24, and the repository root. Leave build and output overrides disabled so Vercel uses `npm run build` and Nitro's Vercel output. Leave `NUXT_APP_BASE_URL` unset or set to `/` for the root domain. The GitHub Pages workflow has been removed.
+
+The redesign's individual commits and the original repository history are preserved. Existing event pages, learning articles, and their image assets remain available alongside the new portfolio and community gallery.
 
 There is no backend service, database, contact submission endpoint, tracking script, or external font dependency. Email links open the visitor’s email application.
 
