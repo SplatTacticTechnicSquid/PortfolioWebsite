@@ -91,12 +91,13 @@ const events = [
   },
 
   {
+    id: "qaws-volunteer",
     title: "Qatar Animal Welfare Society QAWS Volunteer",
     description:
       "Animal Welfare high school volunteer program to care for shelter animals",
     date: "2017",
     type: "Workshop",
-    image: "/images/events/.jpeg",
+    image: "",
   },
 ];
 

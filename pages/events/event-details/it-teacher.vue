@@ -1,18 +1,6 @@
 <template>
   <section class="max-w-6xl mx-auto px-6 py-16 text-white">
-    <!-- HERO -->
-    <div class="mb-12">
-      <NuxtImg
-        src="/images/"
-        alt="Teaching IT at IGCSE secondary school"
-        class="w-full h-[260px] sm:h-[360px] object-cover rounded-2xl"
-        sizes="(max-width: 640px) 100vw, 1024px"
-        preload
-        priority
-      />
-    </div>
-
-    <!-- TITLE -->
+<!-- TITLE -->
     <div class="max-w-3xl mb-12">
       <h1 class="text-3xl md:text-4xl font-bold mb-3">
         IGCSE IT Teaching Experience

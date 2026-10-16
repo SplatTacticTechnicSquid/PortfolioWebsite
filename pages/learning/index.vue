@@ -31,7 +31,7 @@ const articles = [
       "A practical introduction to buffer overflow, stack memory, and why it matters.",
     category: "Security",
     level: "Intermediate",
-    image: "/images/learning/buffer-overflow.jpg",
+    image: "/images/articles/buffer-overflow/ram-stick.png",
   },
   {
     id: "blockchain-basics",
@@ -40,7 +40,8 @@ const articles = [
       "Wallets, tokens, NFTs, and smart contracts explained using Cardano.",
     category: "Blockchain",
     level: "Beginner",
-    image: "/images/learning/blockchain.jpg",
+    image: "",
+    published: false,
   },
 ];
 </script>

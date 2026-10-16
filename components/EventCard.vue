@@ -1,17 +1,18 @@
 <template>
-  <NuxtLink
+  <component :is="event.link ? NuxtLink : 'article'"
     :to="event.link"
     class="block rounded-2xl bg-white/5 backdrop-blur border border-white/10 shadow-lg overflow-hidden hover:scale-[1.02] hover:border-blue-400/40 transition focus:outline-none focus:ring-2 focus:ring-blue-400"
   >
     <!-- Image -->
     <div class="h-40 bg-gray-700 overflow-hidden">
       <NuxtImg
-        :src="event.image || '/images/events/placeholder.png'"
+        v-if="event.image" :src="event.image"
         :alt="event.title"
         class="w-full h-full object-cover"
         loading="lazy"
         sizes="sm:100vw md:50vw lg:33vw"
       />
+      <div v-else class="h-full grid place-items-center bg-green-500/5 text-green-400 font-mono text-sm" aria-hidden="true">{{ event.type }}</div>
     </div>
 
     <!-- Content -->
@@ -32,10 +33,11 @@
         </span>
       </div>
     </div>
-  </NuxtLink>
+  </component>
 </template>
 
 <script setup>
+import { NuxtLink } from '#components';
 defineProps({
   event: {
     type: Object,
