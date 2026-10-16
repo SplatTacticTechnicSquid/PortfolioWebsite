@@ -33,7 +33,6 @@ const cvUrl = useRuntimeConfig().app.baseURL.replace(/\/$/, '') + profile.cvUrl
             <div><dt>university</dt><dd>Universitas Gadjah Mada</dd></div>
           </dl>
           <span class="profile-brace" aria-hidden="true">}</span>
-          <div class="profile-grade"><strong>3.75<span>/ 4.00</span></strong><span>Undergraduate GPA</span></div>
         </div>
       </aside>
     </header>
@@ -133,10 +132,6 @@ const cvUrl = useRuntimeConfig().app.baseURL.replace(/\/$/, '') + profile.cvUrl
 .profile-details > div + div { margin-top: 12px; }
 .profile-details dt { color: var(--accent); font: 11px ui-monospace, Consolas, monospace; }
 .profile-details dd { margin: 4px 0 0; color: var(--ink); font-size: 13px; line-height: 1.5; }
-.profile-grade { display: flex; justify-content: space-between; align-items: center; gap: 20px; border-top: 1px solid var(--line); margin-top: 16px; padding-top: 15px; }
-.profile-grade strong { color: var(--green); font-size: 25px; letter-spacing: -.04em; }
-.profile-grade strong span { color: var(--muted); font-size: 12px; font-weight: 400; margin-left: 7px; }
-.profile-grade > span { color: var(--muted); font-size: 11px; }
 .about-index { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 18px 22px; padding: 22px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .about-index a { color: var(--muted); font-size: 12px; text-decoration: none; }
 .about-index a span { color: var(--green); font: 11px ui-monospace, Consolas, monospace; margin-right: 7px; }
