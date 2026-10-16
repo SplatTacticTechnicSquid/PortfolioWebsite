@@ -34,7 +34,7 @@
     <section class="site-container quick-facts" aria-label="Profile at a glance">
       <div><strong>2<span>+</span></strong><p>Years in enterprise development</p></div>
       <div><strong>{{ projects.length.toString().padStart(2, '0') }}</strong><p>Professional projects showcased</p></div>
-      <div><strong>3.75<span>/4</span></strong><p>GPA · Universitas Gadjah Mada</p></div>
+      <div><p>Universitas Gadjah Mada</p></div>
       <NuxtLink to="/projects/project_details/bom-automation"><strong>&lt;10<span>min</span></strong><p>BOM checks, down from ~2 days <span aria-hidden="true">↗</span></p></NuxtLink>
     </section>
 
